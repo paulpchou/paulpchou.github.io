@@ -1,78 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>周柏如的臉書</title>
-<style>
-body{
-    margin:0%;
+    <title>Acer 筆電</title>
+    <style>
+        * {
+	font-family: 微軟正黑體;
+	box-sizing: border-box;
 }
-#bluebar{
-    width:100%;
-    height:43px;
-    background-color: #4267b2;
+
+htmy, body {
+	margin: 0;
+	padding: 0;
 }
-#timeline{
-    width:75%;
-    min-width: 850px;
-    height:360px;
-    background-color:black;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+		
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
 }
-#avatar{
-    width:160px;
-    height:160px;
-    background-color: white;
-    position: absolute;
-    left:20px;
-    bottom:20px;
-    border-radius:84px;
-    border:2px solid red;
-    background-image:url(img/piano.jpg);
-    background-size: cover;
+
+        #banner {
+            background-color: lightsalmon;
+            height: 350px;
+            background-image: url(img/acer.jpg);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            font-weight: bold;
+            font-family: 微軟正黑體;
+        }
+
+        .navbar {
+            width: 1900px;
+            height: 85px;
+            position: absolute;
+			background-color: brown;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        	.column {
+     float: left;
+     width: 20%;
+     padding: 5px;
+     margin: 0 auto;
+     margin-top: 2px;
+     margin-left: 50px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .column img {
+            width: 200px;
+            height: 70px;
+			margin-left: 50%;
+        }
+		
+		.laptop-model {
+	text-align: center;
+	font-size: 30px;
+	padding-top: 100px;
+	margin: 0;
 }
-#tool{
-    width:100px;
-    height:45px;
-    position: absolute;
-    right:20px;
-    bottom:65px;
+
+		.characteristics {
+	text-align: center;
+	font-size: 28px;
+	margin-top: 0;
 }
-#cover{
-    width:100%;
-    height:315px;
-    background-color: chocolate;
-    background-image:url(img/bluehouse.jpg);
-    background-size: cover;
-    background-position: center;
+		
+		.story {background-color:lightcyan;}
+
+		.story .container .left, .story .container .right {
+	width: 50%;
+	display: inline-block;
+	margin-bottom: 50px;
 }
-#menu{
-    width:100%;
-    height:45px;
-    background-color: green;
+		
+		.story .container .title {
+	color: black;
+	margin-bottom: 30px;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 8%;
 }
-#menubar{
-width:120px;
-height:26px;
-background-color: white;
-position: absolute;
-bottom:20px;
-right:20px;
+
+		.story .container .content {
+	padding: 0 20px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+	font-size: 20px;
 }
-</style>
+		.story .container .title2 {
+	color: black;
+	margin-bottom: 30px;
+	font-size: 24px;
+	text-align: center;
+}
+
+		.story .container .content2 {
+	padding: 0 20px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+	.story .container .title3 {
+	color: black;
+	margin-bottom: 30px;
+	font-size: 24px;
+	text-align: center;
+}
+
+		.story .container .content3 {
+	padding: 0 20px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+		.story .container .title4 {
+	color: black;
+	margin-bottom: 30px;
+	font-size: 24px;
+	text-align: center;
+}
+
+		.story .container .content4 {
+	padding: 0 20px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+.bar .nav-logo {
+            height: 200px;
+            width: 200px;
+            background-color: lightslategray;
+            margin: 0 auto;
+            margin-top: 0;
+			float: left;
+        }
+		.bar .nav-items {
+            margin: 0 auto;
+            display: table;
+			float: left;
+            margin-top: 50px;
+			margin-left: 2%;
+            padding: 0;
+		}
+.bar .nav-items .nav-btn {
+            list-style: none;
+            line-height: 30px;
+        }
+    </style>
 </head>
+
 <body>
-<div id="bluebar"></div>
-<div id="tool"></div>
-<div id="timeline">
-    <div id="avatar"></div>
-    <div id="cover"></div>
-    <div id="menu"></div>
-<div id="menubar"></div>
-</div>
+    <div class="container">
+        <div id="banner">
+            <h1 style="font-size: 40px;">Acer Aspire 5</h1>
+            <h1 style="font-size: 40px;">筆電系列</h1>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="column">
+            <img src="img/aspire.jpg" alt="Acer Aspire">
+        </div>
+        <div class="column">
+            <img src="img/aspire2.jpg" alt="Acer Aspire">
+        </div>
+        <div class="column">
+            <img src="img/aspire3.jpg" alt="Acer Aspire">
+        </div>
+        <div class="column">
+            <img src="img/aspire4.jpg" alt="Acer Aspire">
+        </div>
+    </div>
+	
+		<section class="story">
+		  <div class="container">
+				<h1 class="laptop-model">Aspire 5 A515-52G</h1>
+				<h2 class="characteristics">筆電的特色</h2>
+		<div class="left">
+					<h2 class="title">輕薄强效，美型大視野</h2>
+					<p class="content">
+						Aspire 5 僅 1.8kg, 擁有 15.6" 窄邊框螢幕，符合 GFK「輕薄筆電」的定義。
+					</p>
+		</div><div class="right">
+					<h2 class="title2">輕薄俐落、時尚簡約</h2>
+					<p class="content2">
+						採用頂級鬆絲紋鋁合金機殼，呈現簡約雅致的外型設計，15.6" 僅 1.8kg, 輕薄好攜，移動性佳，讓工作更優雅。
+					</p>
+				</div>
+				<div class="left">
+					<h2 class="title3">晴艷大視野</h2>
+					<p class="content3">
+						螢幕邊框僅 7.82mm, 爲精彩的畫面堤共更大視野。加上使用 15.6" FHD 顯示器和 Acer Color Intelligence, 讓清晰、逼眞的顏色變得更眞實，可即時調整伽馬值和跑和度，將畫面色彩及亮度調整至最佳狀態。
+					</p>
+		</div><div class="right">
+					<h2 class="title4">奔馳效能</h2>
+					<p class="content4">
+						Aspire 5 讓您工作和娛樂兼具，最高可搭戴第 8 代 Intel Core i7 處理器和 NVIDA GeForce MX250 顯示卡。Intel 處理器可讓應用程式加戴更快，並允許多個任務同時執行而不會延遲。而，NVIDA 顯示卡的效能比整合顯示卡快 4 倍。
+					</p>
+				</div>
+		</section>
+
+		<nav class="bar">
+			<div class="nav-mobi-btn"></div>
+			<div class="nav-logo"></div>
+			<ul class="nav-items">
+				<li class="nav-btn">CPU</li>
+				<li class="nav-btn">AAAAA</li>
+				<li class="nav-btn">AAAAA</li>
+			</ul>
+		</nav>
 </body>
+
 </html>
