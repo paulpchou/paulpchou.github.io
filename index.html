@@ -593,7 +593,7 @@ body {
 }
 
 #about {
-  background-image: url('https://ak8.picdn.net/shutterstock/videos/14444278/thumb/1.jpg');
+  background-image: url('img/clouds.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -601,6 +601,55 @@ body {
 .mySlides {
   display: none;
   margin-bottom: 5%;
+}
+figure {
+  margin: 0;
+}
+.absolute-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.fog__container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.fog__img {
+  position: absolute;
+  height: 100vh;
+  width: 300vw;
+}
+.fog__img--first {
+  background: url('https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png') repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 60s linear infinite;
+}
+.fog__img--second {
+  background: url('https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-2.png') repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 40s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-200vw, 0, 0);
+  }
 }
 </style>
 </head>
@@ -650,6 +699,10 @@ body {
 </header>
 <!-- About Section -->
 <div id="about">
+  <div class="fog__container">
+    <div class="fog__img fog__img--first"></div>
+    <div class="fog__img fog__img--second"></div>
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-6">
