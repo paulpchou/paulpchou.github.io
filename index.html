@@ -143,9 +143,6 @@ hr {
 	font-weight: 600;
 	color: #eee;
 }
-#menu.on{
-  background-color: rgba(248, 248, 248, 0)!important;
-}
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
 	color: white;
@@ -605,71 +602,6 @@ body {
   display: none;
   margin-bottom: 5%;
 }
-h1 {
-margin: 10px; 
-}
-
-#ye {
-min-height: 10px; width: 300px; 
-animation: vertical 7s infinite alternate ease-in-out 70ms;
-/*background: silver; */
-}
-#ye::before {
-content: ""; 
-display: inline-block; 
-min-height: 10px; width: 100px; 
--webkit-animation: vertical 3s infinite alternate ease-out 77ms;
-animation: vertical 3s infinite alternate ease-out 77ms;
-/*background: red; opacity: .5; */
-}
-#ye::after {
-content: ""; 
-display: inline-block; 
-min-height: 10px; width: 100px; 
--webkit-animation: vertical 9s infinite alternate ease-in 333ms;
-animation: vertical 9s infinite alternate ease-in 333ms;
-/*background: yellow; opacity: .5; */
-}
-
-#equis {
-height: 50px; min-width: 100px; 
-display: inline-block; 
--webkit-animation: horizontal 11s infinite alternate ease-out 137ms;
-animation: horizontal 11s infinite alternate ease-out 137ms;
-/*background: green; */
-}
-#equis::before {
-content: ""; 
-display: block; 
-height: 20px; width: 100px; 
--webkit-animation: horizontal 9s infinite alternate ease-in 90ms;
-animation: horizontal 9s infinite alternate ease-in 90ms;
-/*background: red; opacity: .5; */
-}
-#equis::after {
-content: ""; 
-display: block; 
-height: 20px; width: 100px; 
--webkit-animation: horizontal 7s infinite alternate ease-in-out 70ms;
-animation: horizontal 7s infinite alternate ease-in-out 70ms;
-/*background: blue; opacity: .5; */
-}
-
-@keyframes horizontal {
- from {min-width: 50px; }
-   to {min-width: 400px; }
-}
-@keyframes vertical {
- from {min-height: 10px; }
-   to {min-height: 200px; }
-}
-img {
-vertical-align: top; 
-}
-    .koreanair img {
-      width: 350px;
-      height: 250px;
-    }
 </style>
 </head>
 <style>
@@ -690,20 +622,15 @@ vertical-align: top;
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about" class="page-scroll">關於韓國</a></li>
-        <li><a href="#services" class="page-scroll">韓國資料</a></li>
-        <li><a href="#weather" class="page-scroll">韓國氣候</a></li>
-        <li><a href="#language" class="page-scroll">韓文簡介</a></li>
-        <li><a href="#attractions" class="page-scroll">景點介紹</a></li>
+        <li><a href="#about" class="page-scroll"><b>關於韓國</b></a></li>
+        <li><a href="#services" class="page-scroll"><b>韓國資料</b></a></li>
+        <li><a href="#weather" class="page-scroll"><b>韓國氣候</b></a></li>
+        <li><a href="#language" class="page-scroll"><b>韓文簡介</b></a></li>
+        <li><a href="#attractions" class="page-scroll"><b>景點介紹</b></a></li>
       </ul>
       <img src="https://d9np3dj86nsu2.cloudfront.net/image/197baa9dbe7daf69f2530417b59fb376" alt="" width=80 height=40>
   </div>
   <p></p>
-  <div id=ye></div>
-  <div id=equis></div>
-  <div class="koreanair">
-  <img src="img/koreanair.png">
-</div>
   <p></p>
     <!-- /.navbar-collapse --> 
   </div>
