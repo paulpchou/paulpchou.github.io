@@ -144,7 +144,7 @@ hr {
 	color: #eee;
 }
 #menu.on{
-  background-color: rgba(248, 248, 248, 0.1)!important;
+  background-color: rgba(248, 248, 248, 0)!important;
 }
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
@@ -606,93 +606,66 @@ body {
   margin-bottom: 5%;
 }
 h1 {
-      margin: 10px;
-    }
-    #ye {
-      min-height: 10px;
-      width: 100px;
-      animation: vertical 7s infinite alternate ease-in-out 70ms;
-      /*background: silver; */
-      position: fixed;
-    }
+margin: 10px; 
+}
 
-    #ye::before {
-      content: "";
-      display: inline-block;
-      min-height: 10px;
-      width: 100px;
-      -webkit-animation: vertical 3s infinite alternate ease-out 77ms;
-      animation: vertical 3s infinite alternate ease-out 77ms;
-      /*background: red; opacity: .5; */
-      position: fixed;
-    }
+#ye {
+min-height: 10px; width: 300px; 
+animation: vertical 7s infinite alternate ease-in-out 70ms;
+/*background: silver; */
+}
+#ye::before {
+content: ""; 
+display: inline-block; 
+min-height: 10px; width: 100px; 
+-webkit-animation: vertical 3s infinite alternate ease-out 77ms;
+animation: vertical 3s infinite alternate ease-out 77ms;
+/*background: red; opacity: .5; */
+}
+#ye::after {
+content: ""; 
+display: inline-block; 
+min-height: 10px; width: 100px; 
+-webkit-animation: vertical 9s infinite alternate ease-in 333ms;
+animation: vertical 9s infinite alternate ease-in 333ms;
+/*background: yellow; opacity: .5; */
+}
 
-    #ye::after {
-      content: "";
-      display: inline-block;
-      min-height: 10px;
-      width: 100px;
-      -webkit-animation: vertical 9s infinite alternate ease-in 333ms;
-      animation: vertical 9s infinite alternate ease-in 333ms;
-      /*background: yellow; opacity: .5; */
-      position: fixed;
-    }
+#equis {
+height: 50px; min-width: 100px; 
+display: inline-block; 
+-webkit-animation: horizontal 11s infinite alternate ease-out 137ms;
+animation: horizontal 11s infinite alternate ease-out 137ms;
+/*background: green; */
+}
+#equis::before {
+content: ""; 
+display: block; 
+height: 20px; width: 100px; 
+-webkit-animation: horizontal 9s infinite alternate ease-in 90ms;
+animation: horizontal 9s infinite alternate ease-in 90ms;
+/*background: red; opacity: .5; */
+}
+#equis::after {
+content: ""; 
+display: block; 
+height: 20px; width: 100px; 
+-webkit-animation: horizontal 7s infinite alternate ease-in-out 70ms;
+animation: horizontal 7s infinite alternate ease-in-out 70ms;
+/*background: blue; opacity: .5; */
+}
 
-    #equis {
-      height: 50px;
-      min-width: 50px;
-      display: inline-block;
-      -webkit-animation: horizontal 11s infinite alternate ease-out 137ms;
-      animation: horizontal 11s infinite alternate ease-out 137ms;
-      /*background: green; */
-      position: fixed;
-    }
-
-    #equis::before {
-      content: "";
-      display: block;
-      height: 20px;
-      width: 50px;
-      -webkit-animation: horizontal 9s infinite alternate ease-in 90ms;
-      animation: horizontal 9s infinite alternate ease-in 90ms;
-      /*background: red; opacity: .5; */
-      position: fixed;
-    }
-
-    #equis::after {
-      content: "";
-      display: block;
-      height: 20px;
-      width: 100px;
-      -webkit-animation: horizontal 7s infinite alternate ease-in-out 70ms;
-      animation: horizontal 7s infinite alternate ease-in-out 70ms;
-      /*background: blue; opacity: .5; */
-      position: fixed;
-    }
-
-    @keyframes horizontal {
-      from {
-        min-width: 50px;
-      }
-
-      to {
-        min-width: 100px;
-      }
-    }
-
-    @keyframes vertical {
-      from {
-        min-height: 10px;
-      }
-
-      to {
-        min-height: 100px;
-      }
-    }
-
-    img {
-      vertical-align: top;
-    }
+@keyframes horizontal {
+ from {min-width: 50px; }
+   to {min-width: 400px; }
+}
+@keyframes vertical {
+ from {min-height: 10px; }
+   to {min-height: 200px; }
+}
+img {
+vertical-align: top; 
+}
     .koreanair img {
       width: 350px;
       height: 250px;
