@@ -1,78 +1,1117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>周柏如的臉書</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>介紹韓國 한국 소개</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Slider
+    ================================================== -->
+<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body{
-    margin:0%;
+    body, html {
+	font-family: 'Open Sans', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	color: skyblue;
+	font-weight: 400;
+	width: 100% !important;
+	height: 100% !important;
 }
-#bluebar{
-    width:100%;
-    height:43px;
-    background-color: #4267b2;
+.mySlides img {
+  width: 100%;
+  height: 450px;
 }
-#timeline{
-    width:75%;
-    min-width: 850px;
-    height:360px;
-    background-color:black;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+h2 {
+	margin: 0 0 20px 0;
+	font-weight: 600;
+	font-size: 36px;
+	color: #333;
 }
-#avatar{
-    width:160px;
-    height:160px;
-    background-color: white;
-    position: absolute;
-    left:20px;
-    bottom:20px;
-    border-radius:84px;
-    border:2px solid red;
-    background-image:url(img/piano.jpg);
-    background-size: cover;
+h3, h4 {
+	font-size: 20px;
+	font-weight: 400;
+	color: #333;
 }
-#tool{
-    width:100px;
-    height:45px;
-    position: absolute;
-    right:20px;
-    bottom:65px;
+h5 {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 20px;
 }
-#cover{
-    width:100%;
-    height:315px;
-    background-color: chocolate;
-    background-image:url(img/bluehouse.jpg);
-    background-size: cover;
-    background-position: center;
+p {
+	font-size: 15px;
 }
-#menu{
-    width:100%;
-    height:45px;
-    background-color: green;
+p.intro {
+	margin: 12px 0 0;
+	line-height: 24px;
 }
-#menubar{
-width:120px;
-height:26px;
-background-color: white;
-position: absolute;
-bottom:20px;
-right:20px;
+a {
+	color: #6aaf08;
+	font-weight: 400;
 }
+a:hover, a:focus {
+	text-decoration: none;
+	color: #222;
+}
+ul, ol {
+	list-style: none;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+ul, ol {
+	padding: 0;
+	webkit-padding: 0;
+	moz-padding: 0;
+}
+hr {
+	height: 3px;
+	width: 70px;
+	text-align: center;
+	position: relative;
+	background: #6aaf08;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border: 0;
+}
+/* Navigation */
+#menu {
+	padding: 20px;
+	transition: all 0.8s;
+  background-color: rgba(248, 248, 248, 0);
+}
+#menu.on{
+  background-color: rgba(248, 248, 248, 0.3)!important;
+}
+#menu.navbar-default {
+	background-color: rgba(248, 248, 248, 0);
+	border-color: rgba(231, 231, 231, 0);
+}
+#menu a.navbar-brand {
+	font-size: 26px;
+	font-weight: 600;
+	color: #eee;
+}
+#menu.navbar-default .navbar-nav > li > a {
+	text-transform: uppercase;
+	color: white;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	padding: 8px 2px;
+	border-radius: 0;
+	margin: 9px 20px 0 20px;
+}
+#menu.navbar-default .navbar-nav > li > a:hover {
+	color: #CD2E3A;
+}
+.on {
+	background-color: #333 !important;
+	padding: 0 !important;
+	padding: 3px 0 !important;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #0047A0 !important;
+	background-color: transparent;
+}
+.navbar-toggle {
+	border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #fff;
+	border-color: #fff;
+}
+.navbar-default .navbar-toggle:hover>.icon-bar {
+	background-color: #6aaf08;
+}
+.section-title {
+	margin-bottom: 70px;
+}
+.section-title p {
+	font-size: 18px;
+	color: #666;
+}
+.btn-custom {
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #6aaf08;
+	padding: 14px 20px;
+	letter-spacing: 1px;
+	margin: 0;
+	font-size: 17px;
+	font-weight: 400;
+	border-radius: 6px;
+	margin-top: 20px;
+	transition: all 0.3s;
+}
+.btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
+	color: #fff;
+	background-color: #5f9d07;
+}
+.btn:active, .btn.active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+	outline: none;
+	outline-offset: none;
+}
+/* Header Section */
+.intro {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background: url(img/intro-bg.jpg) top center no-repeat;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.intro .overlay {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,70ad47+100&0.6+0,0.4+100 */
+	background: -moz-linear-gradient(top, skyblue 0%, rgba(112,173,71,0.4) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, skyblue 0%, rgba(112,173,71,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, skyblue 0%, rgba(112,173,71,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#6670ad47', GradientType=0 ); /* IE6-9 */
+}
+.intro .fa {
+	font-size: 94px;
+	margin-bottom: 40px;
+	color: #fff;
+}
+.intro h1 {
+	color: #fff;
+	font-size: 64px;
+	font-weight: 700;
+	letter-spacing: -1px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.intro p {
+	color: #fff;
+	font-size: 22px;
+	margin-top: 20px;
+	line-height: 28px;
+	margin-bottom: 40px;
+}
+.intro .btn-custom {
+	border-top: 1px solid rgba(255,255,255,0.4);
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+header .intro-text {
+	padding-top: 320px;
+	padding-bottom: 200px;
+	text-align: center;
+}
+/* About Section */
+#about {
+	padding: 30px 0 80px 0;
+	background: #f6f6f6;
+}
+#about h3 {
+	font-size: 22px;
+	font-weight: 600;
+	margin: 20px 0 0 0;
+}
+#about .about-text span {
+	color: #70ad47;
+	font-weight: 700;
+	letter-spacing: -1px;
+}
+#about hr {
+	margin-left: 0;
+	margin-bottom: 40px;
+}
+#about .btn {
+	margin-top: 40px;
+}
+#about .about-media img {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+#about .about-text, #about .about-desc {
+	margin-bottom: 40px;
+}
+#about p {
+	line-height: 24px;
+	margin-top: 20px;
+}
+/* info Section */
+#services {
+	padding: 30px 0;
+	background: black;
+}
+#services .service-media {
+	margin: 10px;
+}
+#services .service-media img {
+	position: relative;
+	width: 225px;
+	height: 225px;
+	border-radius: 50%;
+	border: 10px solid rgba(255,255,255,0.1);
+}
+#services .service-desc {
+	margin: 10px 10px 40px;
+	text-align: center;
+}
+#services h2 {
+	color: #fff;
+}
+#services h3 {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 400;
+	padding: 5px 0;
+}
+#services p {
+	color: rgba(255,255,255,0.9);
+}
+#services hr {
+	background: rgba(255,255,255,0.6);
+}
+/* weather Section */
+#portfolio {
+	padding: 100px 0;
+	background: #f6f6f6;
+}
+.categories {
+	text-align: center;
+}
+ul.cat li {
+	display: inline-block;
+}
+ol.type li {
+	display: inline-block;
+	margin: 0 10px 40px 10px;
+}
+ol.type li a {
+	color: #555;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 8px 16px;
+	background: #e6e6e6;
+	border: 0;
+	border-radius: 4px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: all 0.3s;
+}
+ol.type li a.active {
+	background: #6aaf08;
+	color: #fff;
+}
+ol.type li a:hover {
+	background: #6aaf08;
+	color: #fff;
+}
+.isotope-item {
+	z-index: 2
+}
+.isotope-hidden.isotope-item {
+	z-index: 1
+}
+.isotope, .isotope .isotope-item {
+	/* change duration value to whatever you like */
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+.isotope-item {
+	margin-right: -1px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.isotope {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	transition-property: height, width;
+}
+.isotope .isotope-item {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property: -moz-transform, opacity;
+	transition-property: transform, opacity;
+}
+.portfolio-item {
+	margin: 15px 0;
+}
+.portfolio-item .hover-bg {
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+}
+.hover-bg .hover-text {
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 30% 0 0 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.hover-bg .hover-text>h4 {
+	opacity: 0;
+	color: #fff;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	transition: all 0.3s;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.hover-bg:hover .hover-text>h4 {
+	opacity: 1;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+.hover-bg:hover .hover-text {
+	opacity: 1;
+}
+/* language Section */
+#language {
+	background: #444 url('https://www.omniglot.com/images/writing/korean_cons.gif') center center no-repeat fixed;
+	background-size: cover;
+}
+#language .overlay {
+	padding: 5px 0;
+	background: #CD2E3A;
+}
+#language h2 {
+	color: white;
+}
+#language hr {
+	background: rgba(255,255,255,0.6);
+}
+#language p {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 32px;
+}
+.owl-theme .owl-controls .owl-page span {
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=1);
+	opacity: 1;
+	border-radius: 50%;
+	background: rgba(255,255,255,0.4);
+	transition: all 0.5s;
+	border: 1px solid rgba(255,255,255,0.3);
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+	filter: Alpha(Opacity=100);
+	opacity: 1;
+	background: #0047A0;
+	border: 1px solid #0047A0;
+}
+.owl-theme .owl-controls .owl-page.active span {
+	background: #0047A0;
+	border: 1px solid #0047A0;
+}
+/* Footer Section*/
+#footer {
+	background: #0047A0;
+	padding: 5px 0 20px;
+}
+#footer h3 {
+	color: #1e7a46;
+	font-weight: 400;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+#footer .social {
+	margin: 10px 0 50px 0;
+}
+#footer .social ul li {
+	display: inline-block;
+	margin: 0 20px;
+}
+#footer .social i.fa {
+	font-size: 22px;
+	width: 40px;
+	height: 30px;
+	padding: 10px;
+	background: #444;
+	color: #6aaf08;
+	border-radius: 50%;
+	transition: all 0.3s;
+}
+#footer .social i.fa:hover {
+	background: #6aaf08;
+	color: #fff;
+}
+#footer p {
+	color: #666;
+	font-size: 15px;
+}
+#footer a {
+	color: #888;
+}
+#footer a:hover {
+	color: #ccc;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  z-index: 99;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: yellow;
+  color: darkblue;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+#myBtn:hover {
+  background-color: #CD2E3A;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 10px 10px #CD2E3A;
+  padding: 10px;
+  text-align: center;
+  background-color: #0047A0;
+}
+
+#attractions {
+  background-image: url(https://lonelyplanetwp.imgix.net/2018/09/seoul-namsan-nseoul-tower-autumn-d84e51f541c0.jpg?fit=min&q=40&sharp=10&vib=20&w=1470);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#about {
+  background-image: url('https://ak8.picdn.net/shutterstock/videos/14444278/thumb/1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.mySlides {
+  display: none;
+  margin-bottom: 5%;
+}
+h1 {
+      margin: 10px;
+    }
+
+    #ye {
+      min-height: 10px;
+      width: 100px;
+      animation: vertical 7s infinite alternate ease-in-out 70ms;
+      /*background: silver; */
+    }
+
+    #ye::before {
+      content: "";
+      display: inline-block;
+      min-height: 10px;
+      width: 100px;
+      -webkit-animation: vertical 3s infinite alternate ease-out 77ms;
+      animation: vertical 3s infinite alternate ease-out 77ms;
+      /*background: red; opacity: .5; */
+    }
+
+    #ye::after {
+      content: "";
+      display: inline-block;
+      min-height: 10px;
+      width: 100px;
+      -webkit-animation: vertical 9s infinite alternate ease-in 333ms;
+      animation: vertical 9s infinite alternate ease-in 333ms;
+      /*background: yellow; opacity: .5; */
+    }
+
+    #equis {
+      height: 50px;
+      min-width: 50px;
+      display: inline-block;
+      -webkit-animation: horizontal 11s infinite alternate ease-out 137ms;
+      animation: horizontal 11s infinite alternate ease-out 137ms;
+      /*background: green; */
+    }
+
+    #equis::before {
+      content: "";
+      display: block;
+      height: 20px;
+      width: 50px;
+      -webkit-animation: horizontal 9s infinite alternate ease-in 90ms;
+      animation: horizontal 9s infinite alternate ease-in 90ms;
+      /*background: red; opacity: .5; */
+    }
+
+    #equis::after {
+      content: "";
+      display: block;
+      height: 20px;
+      width: 100px;
+      -webkit-animation: horizontal 7s infinite alternate ease-in-out 70ms;
+      animation: horizontal 7s infinite alternate ease-in-out 70ms;
+      /*background: blue; opacity: .5; */
+    }
+
+    @keyframes horizontal {
+      from {
+        min-width: 50px;
+      }
+
+      to {
+        min-width: 100px;
+      }
+    }
+
+    @keyframes vertical {
+      from {
+        min-height: 10px;
+      }
+
+      to {
+        min-height: 100px;
+      }
+    }
+
+    img {
+      vertical-align: top;
+    }
+    .koreanair img {
+      width: 350px;
+      height: 250px;
+      top: 0;
+    }
 </style>
 </head>
-<body>
-<div id="bluebar"></div>
-<div id="tool"></div>
-<div id="timeline">
-    <div id="avatar"></div>
-    <div id="cover"></div>
-    <div id="menu"></div>
-<div id="menubar"></div>
+<style>
+* {
+	font-family: 微軟正黑體;
+	box-sizing: border-box;
+}
+</style>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation
+    ==========================================-->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <h2 style="color:white;">介紹韓國 한국 소개</h2></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about" class="page-scroll">關於韓國</a></li>
+        <li><a href="#services" class="page-scroll">韓國資料</a></li>
+        <li><a href="#weather" class="page-scroll">韓國氣候</a></li>
+        <li><a href="#language" class="page-scroll">韓文簡介</a></li>
+        <li><a href="#attractions" class="page-scroll">景點介紹</a></li>
+      </ul>
+      <img src="https://d9np3dj86nsu2.cloudfront.net/image/197baa9dbe7daf69f2530417b59fb376" alt="" width=80 height=40>
+  </div>
+  <div id=ye></div>
+  <div id=equis></div>
+  <div class="koreanair">
+  <img src="img/koreanair.png">
 </div>
+  <p></p>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 intro-text">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <div class="about-text">
+          <h2 style="color:#0047A0">關於韓國 한국에 대해서</span></h2>
+          <p><h3 style="color:black"><b>역사 歷史：</b></h3></p>
+          <p><h4 style="color:#CD2E3A;">韓國的歷史，經過人類歷學研究發現，早在 70 萬年前，朝鮮半島就有人類居住。這時期叫做史前時代。根據傳説，神話人物檀君於公元前 2333 年建立了韓國第一個王國~古朝鮮。之後，有幾個部族由滿州南部地區移到朝鮮半島。這時期叫做古朝鮮。朝鮮王朝建立於 14 世紀末期，儒教成爲國教，對於整個社會產生了重大的影響力。西元  1443 年發明了韓文字母。由於日本的侵略 (西元 1592 年，任辰倭亂) 和外國勢力的侵略使朝鮮開始走向衰退。西元 2000 年曆史性的南北韓首腦會談在北韓的首都平壤召開。朝韓分治後，韓國經歷了民主與獨裁統治的反復交替。</h4></p>
+          </div>
+          <p><h3 style="color:black"><b>문화 文化：</b></h3></p>
+          <p><h4 style="color:#CD2E3A;">朝鮮戰爭後朝鮮半島的南北對峙導致了南北朝鮮現代社會化的差異，但雙方傳統文化卻一脈相承。韓國現代社會文化由朝鮮民族傳統文化與現代社會流行文化相結合衍生而來，1948 年朝鮮半島南北對峙以來，南北韓的現代文化出現不同的發展。韓國現代社會文化是朝鮮民族文化現代化的產物。隨着韓國經濟和社會的發展，韓國人的衣食住行等生活方式也發生了變化，從而構築了韓國現代文化。韓國文化在亞洲和世界的流行被稱爲韓流。</h4></p>
+        </div>
+      <div class="col-xs-12 col-md-3">
+        <div class="about-media"> <img src="img/bibimbap.png" alt=" "> </div>
+        <div class="about-desc">
+          <h3 style="color:black"><b>한국요리 韓國料理：</b></h3>
+          <p><h4 style="color:#0047A0;">韓國料理或韓式料理以清淡爲主，較少油，但多辣。有各式各樣的韓式料理。從古代開始，最主要的主食是米飯。近期，韓國的飲食和各種的蔬菜、肉類、魚類一起組成。泡菜 (發酵的辣白菜), 也是韓國的文化之一。韓國人擺餐桌的特色是全部的飲食同時擺出。傳統韓國飲食分別爲：米飯和粥、湯、砂鍋、燻和燉食品、拌菜、腌海物 (用鹽腌好的海産品)、烤食品、煎餅、餃子。拌飯分兩種：鐵鍋拌飯和石鍋拌飯。鐵鍋拌飯是冷的，但石鍋拌飯是熱的。拌飯是冷的，所以，菜類還是新鮮的，但有的人喜歡蔬菜的料。因爲有些蔬菜的料沒有被煮過，您就能品嘗到配料的新鮮感。</h4></p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-3">
+        <div class="about-media"> <img src="img/skmap.png" alt=" "> </div>
+        <div class="about-desc">
+          <h3 style="color:black"><b>경제 經濟：</h3></b>
+          <p><h4 style="color:#0047A0;">大韓民國的經濟是世界主要經濟體之一，經濟合作與發展組織（OECD）成員，亞洲四小龍之一。韓國同時也是未來 11 國中唯一一個發達國。據世界銀行的統計，韓國 2014 年國内生產總值按國際匯率和相對購買力指標計算在世界排名皆位居第 13 位。韓國是世界第 6 大出口國和第 9 大進口國。截至 2015 年 3 月，韓國已與包括美國、歐盟、中國在内的 52 個國家簽訂了 14 個自由貿易協定，其「經濟領土」規模達世界 GDP 的 73.5%. 自 20 世紀 60 年代，韓國根據本國比較優勢，積極參與國際分工，使經濟發展進入了快速發展的軌道。</h4></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="img/koreanair.png" alt="大韓航空" width=250 height=150>
+  <img src="img/asiana.png" alt="韓亞航空" width=250 height=150>
+<!-- info Section -->
+<div id="services">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1 section-title text-center">
+      <h2>韓國資料 한국에 관한 정보</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-3 text-center">
+        <div class="service-media"> <img src="https://www.nationsonline.org/gallery/Korea_South/Seoraksan-Inje-gun-South-Korea.jpg" alt=" "> </div>
+        <div class="service-desc">
+          <h3 style="color:#CD2E3A"><u>國名 나라 이름</u></h3>
+          <h4 style="color:white">韓國，南韓，大韓民國</h4>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="service-media"> <img src="https://sa.kapamilya.com/absnews/abscbnnews/media/2017/overseas/03/21/south-korea-flag-032117.jpg" alt=" "> </div>
+        <div class="service-desc">
+          <h3 style="color:#CD2E3A"><u>國旗 국기</u></h3>
+          <h4 style="color:white;">太極旗</h4>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="service-media"> <img src="http://image.ohmynews.com/down/images/1/todd_206624_1[274229].gif" alt=" "> </div>
+        <div class="service-desc">
+          <h3 style="color:#CD2E3A"><u>國歌 국가</u></h3>
+          <h4 style="color:white">愛國歌</h4>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="service-media"> <img src="http://tong.visitkorea.or.kr/img/vk/cht/page/img_6_1_4.jpg" alt=" "> </div>
+        <div class="service-desc">
+          <h3 style="color:#CD2E3A"><u>國花 국화</u></h3>
+          <h4 style="color:white">無窮花</h4>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="service-media"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLaNmAHkDtOSVC_dZ_yU-EebODN0JVYqVNUiNSyZaNiNqJxdf3" alt=" "> </div>
+        <div class="service-desc">
+          <h3 style="color:#0047A0"><u>人口 인구</u></h3>
+          <h4 style="color:white">51,279,478 (2019)</h4>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="service-media"> <img src="img/seoul.jpg" alt=" "> </div>
+        <div class="service-desc">
+          <h3 style="color:#0047A0"><u>首都 자본</u></h3>
+          <h4 style="color:white">首爾</h4>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="service-media"> <img src="https://media.cntraveler.com/photos/5a7235f9ee3bb7795af31910/4:3/w_480,c_limit/Skyline-of-Busan-GettyImages-187845112.jpg" alt=" "> </div>
+        <div class="service-desc">
+          <h3 style="color:#0047A0"><u>主要城市 주요 도시</u></h3>
+          <h4 style="color:white">首爾、釜山、仁川、</h4>
+          <h4 style="color:white">光州、大邱、大田、</h4>
+          <h4 style="color:white">慶洲、釜山</h4>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="service-media"> <img src="https://modernseoul.files.wordpress.com/2011/09/south-korea-50000-won.jpg" alt=" "> </div>
+        <div class="service-desc">
+          <h3 style="color:#0047A0"><u>貨幣 통화</u></h3>
+          <h4 style="color:white">韓元、 ₩, KRW</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- weather Section -->
+<p></p>
+<div id="weather">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2 style="color:#0047A0">韓國氣候 한국 기후</h2>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+            <img src="https://www.17-minute-languages.com/grafik/Big/Koreanisch-Big-02.jpg" class="img-responsive" alt="봄">
+            <h3 style="color:#CD2E3A"><b>春 봄</b></h3>
+            <h5 style="color:white">春季爲 3 月初-5 月底</h5>
+            <h5 style="color:black">日夜溫差大，早晚涼，白天溫暖。請記得要攜帶薄長袖和輕便的外套。春天也是韓國的櫻花季節。</h5>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+            <img src="https://i1.wp.com/en.blog.kkday.com/wp-content/uploads/batch_sea_Ashutterstock_1081733099.jpg?fit=900%2C600&ssl=1" class="img-responsive" alt="봄">
+            <h3 style="color:#CD2E3A"><b>夏 여름</b></h3>
+            <h5 style="color:white">夏季爲 6 月初-9 月底</h5>
+            <h5 style="color:black">高溫潮濕，多帶涼快夏衣，並攜帶輕便的外套，避免天氣突然變化。7-8 月是梅雨季，多雨的時候。須攜帶雨具。</h5>
+	</div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+            <img src="https://miro.medium.com/max/1200/0*1YaM7qxs0y3jdQTC" class="img-responsive" alt="봄">
+            <h3 style="color:#CD2E3A"><b>秋 가을</b></h3>
+            <h5 style="color:white">秋季爲 9 月中-11 月中</h5>
+            <h5 style="color:black">開始刮涼風，晴朗的天氣較多，可多外出。秋季和春季一樣，日夜溫差大。要記得攜帶外套、圍巾和絲巾。</h5>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+            <img src="http://www.arounddb.com/wp-content/uploads/2017/05/1495183992.jpg" class="img-responsive" alt="봄">
+            <h3 style="color:#CD2E3A"><b>冬 겨울</b></h3>
+            <h5 style="color:white">冬季爲 11 月底-2 月底</h5>
+            <h5 style="color:black">氣溫都在攝氏零度以下，下雪的機會比較多。要攜帶保暖的厚 衣物、圍巾，手套，等。</h5>
+        </div>
+      </div>
+    </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<!-- language Section -->
+<p></p>
+<div id="language" class="text-center">
+  <div class="overlay">
+    <div class="container">
+      <div class="section-title">
+        <h2>韓文簡介 한국 소개</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div id="testimonial" class="owl-carousel owl-theme">
+            <div class="item">
+              <p>韓文 한국어 通用於韓半島和中國的東北、俄羅斯遠東地區和日本等韓民族或朝鮮民族聚居地區所使用的語言。就在中國 1897 年，大韓帝國成立之前，該語言只是叫做「朝鮮語」或「朝語」。</p>
+              </div>
+              <div class="item">
+              <p>中華人民共和國於 1949 年建國之後，視同屬社會主義陣營的朝鮮民主主義人民共和國爲整個朝鮮半島的唯一合法政府。</p>
+              </div>
+            <div class="item">
+              <p>所以，將中國國内和北韓半島所有關於朝鮮族的文化和國家的字詞以「朝鮮」來稱呼。該語言也因而繼續稱爲「朝鮮語」。</p>
+              </div>
+            <div class="item">
+              <p>但在 1992 年，中國與大韓民國建交之後，與韓國的直接文化和經濟交流迅速發展，大韓民國資本大量流入中國，該語言的課本、辭典等幾乎都以「韓國語」的名稱發行而且内容以韓國詞彙爲主。因此，現在「韓語」和「韓國語」的稱呼在中國更加普遍。</p>
+               </div>
+               <div class="item">
+                <p><b>母音 21</b> (ㅏ~ㄚ) (ㅓ~ㄛ) (ㅗ~ㄡ) (ㅜ~ㄨ) (ㅡ~ㄜ) (ㅣ~一) (ㅘ~ㄨㄚ) (ㅑ~ㄧㄚ) (ㅕ~一ㄛ) (ㅛ~一ㄡ) (ㅠ~一ㄨ) (ㅐ~ㄝ) (ㅔ~ㄝ) (ㅙ~ㄨㄟ) (ㅢ~ㄜ一) (ㅟ~ㄨ一) (ㅝ~ㄨㄛ) (ㅞ~ㄨㄟ) (ㅒ~一ㄝ) (ㅖ~一ㄝ) (ㅚ~ㄨㄟ)</p>
+                 </div>
+                 <div class="item">
+                  <p><b>子音 19</b> (ㄱ~ㄎ ㄍ) (ㄷ~ㄊ ㄉ) (ㅂ~ㄆ ㄅ) (ㅈ~ㄘ ㄓ) (ㅅ~ㄙ ㄒ) (ㄲ~重 ㄍ)(ㄸ~重 ㄉ) (ㅃ~重 ㄅ) (ㅉ~重 ㄓ) (ㅆ~ㄙ ㄒ) (ㅋ~ㄎ 氣) (ㅌ~ㄊ 氣) (ㅍ~ㄆ 氣) (ㅊ~ㄘ 氣) (ㅎ~ㄏ 氣) (ㄴ~ㄋ) (ㄹ~ㄌ) (ㅁ~ㄇ) (ㅇ~---)</p>
+                   </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- attractions Section -->
+<p></p>
+<div id="attractions" class="text-center">
+  <div class="container">
+    <div class="section-title text-center">
+      <p></p>
+      <h2 style="color:#CD2E3A">景點介紹 어트랙션 소개</h2>
+    </div>
+    <div class="w3-content w3-display-container">
+
+      <div class="w3-display-container mySlides">
+        <img src="https://img.rainieis.tw/pixnet/3e2b1aa17d6b7e0e932bae6b3deb868f.jpg">
+        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-clear">
+          <h2 style="color:#CD2E3A"><b>北村韓屋村 북촌한옥마을</b></h2>
+          <h5 style="color:white"><b>從以前開始，北村韓屋村是衆所皆知的兩班貴族居住的地方，這裡的住宅是朝鮮時代的瓦屋。一直到今天，還是全部保留過去上流階層的建築形式，有大宮闕之間的傳統式的韓屋的建築。遊客可欣賞有 600 年歷史都市的迷人風景。</b></h5>
+        </div>
+      </div>
+      
+      <div class="w3-display-container mySlides">
+        <img src="http://cfile236.uf.daum.net/image/1574AF194B16D5F80F88A6">
+        <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
+          <h2 style="color:#CD2E3A"><b>景福宮 경복궁</b></h2>
+          <h5 style="color:white"><b>景福宮是太祖李成桂於西元 1395 年下令新建的朝鮮王朝法宮，和東闕 (昌德宮)、西闕 (慶熙宮) 相較之下位置較北，所以，又被稱爲「北闕」。景福宮 (史蹟第 117 號) 是五大宮闕中，規模最大。最美麗的宮闕的建築設計。</b></h5>
+        </div>
+      </div>
+      
+      <div class="w3-display-container mySlides">
+          <img src="https://blog.kkday.com/wp-content/uploads/batch_P1260192.jpg">
+          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
+            <h2 style="color:#CD2E3A"><b>宏大街道 홍대거리</b></h2>
+              <h5 style="color:white"><b>大韓民國的年輕族羣的街頭文化象徵，主要以弘益大學爲中心點。街道上聚焦着反映最新潮流的餐廳、咖啡館、夜店、和服飾店。遊客也可以參觀宏益大學。街道不時會有人唱歌，等，吸引許多的人。</b></h5>
+          </div>
+        </div>
+      
+        <div class="w3-display-container mySlides">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Korea-Seoul-Blue_House_%28Cheongwadae%29_Reception_Center_0688%269-07_cropped.jpg">
+          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
+            <h2 style="color:#CD2E3A"><b>青瓦台 청와대</b></h2>
+              <h5 style="color:white"><b>青瓦台是大韓民國總統的官邸。主要由本館、迎賓館、春秋館、綠地園、無窮花花園、七宮等建築物所組成。大韓民國總統府精神的本館屋頂，使用了共約 15 萬塊青瓦所築成，和曲線條屋頂相映成趣，爲要呈現出國家的美麗，使青瓦台得名。</b></h5>
+          </div>
+        </div>
+      
+        <div class="w3-display-container mySlides">
+          <img src="http://n2-q.mafengwo.net/s11/M00/2C/A0/wKgBEFqynrOAW-pPAAadBn6y7rI57.jpeg?imageMogr2%2Fthumbnail%2F%21690x370r%2Fgravity%2FCenter%2Fcrop%2F%21690x370%2Fquality%2F100">
+          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
+            <h2 style="color:#CD2E3A"><b>大韓民國歷史博物館 대한민국역사박물관</b></h2>
+              <h5 style="color:white"><b>大韓民國歷史博物館於 2012/12/26 開幕。它，紀錄來自 19 世紀末被迫貿易通商的開港期到如今。大韓民國如何成立，持續發展的足跡。博物館設立宗旨，在透過展覽、教育、調查研究與資料收集，爲了與國民共享在苦難與逆境中成長的韓國的歷史。</b></h5>
+          </div>
+        </div>
+      
+        <div class="w3-display-container mySlides">
+          <img src="img/icn.jpg">
+          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
+            <h2 style="color:#CD2E3A"><b>首爾仁川國際機場 서울인천국제공항</b></h2>
+              <h5 style="color:white"><b>仁川機場於 2001/3/29 正式開幕。仁川機場的第二航廈於 2018/1/18 正式啟用，爲了紓減第一航廈壅擠的人潮。第二航廈的整體建築非常奪目，也可看到許多綠色的植物。第二航廈有室內花園、洗衣店、傳統韓國體驗中心、機器人，等。來第二航廈就要到韓式料理美食街用餐。</b></h5>
+          </div>
+        </div>
+      
+        <div class="w3-display-container mySlides">
+          <img src="http://tourpangkorea.com/design/upload_file/BD1003/f5c38ed6e1b36b0e4022413b12a004c7_20684_6.jpg">
+          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
+            <h2 style="color:#CD2E3A"><b>漢江公園 한강공원</b></h2>
+            <h5 style="color:white"><b>汝矣島漢江公園集結政治、金融、媒體的重心－汝矣島之上。方便的大衆運輸，如，地鐵、公車等，成爲上班族和首爾市民時常前往的地方。汝矣島漢江公園春天不只可以欣賞櫻花，秋天也有世界煙火節之外，還有馬拉松大會等多種活動，乃擁有豐富活動與景點的公衆休息活動空間。</b></h5>
+          </div>
+        </div>
+      
+        <div class="w3-display-container mySlides">
+          <img src="https://i2.wp.com/image.teavanilla.com/2017/01/DDP01_thumb.jpg?resize=604%2C404&ssl=1">
+          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
+            <h2 style="color:#CD2E3A"><b>東大門設計廣場 동대문디자인플라자</b></h2>
+              <h5 style="color:white"><b>東大門設計廣場 (DDP) 位置於東大門歷史文化公園地鐵站的複合文化空間，它名字拼成 Dream, Design, Play. 這裡有蠻多的展覽、服裝秀、研討會、會議等還外國内的重要活動的舉辦地。同時，也帶動新品問世與時尚趨勢。</b></h5>
+          </div>
+        </div>
+      
+        <div class="w3-display-container mySlides">
+          <img src="http://www.yingshiyou.com/uploads/allimg/140609/1-140609231956128.jpg">
+          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
+            <h2 style="color:#CD2E3A"><b>韓國民俗村 한국민속촌</b></h2>
+              <h5 style="color:white"><b>韓國民俗村與首爾南方的距離約 41 公里，在京釜高速公路水原 I.C 往東南方 3 公里處。村内保存了民族文化資源，且作爲延續後代更加解固有場所可以學習文化的教育，以及專爲着海内和海外遊客介紹韓國傳統文化而建立的。本村於 1973 年正式破土，隔年竣工落成。</b></h5>
+          </div>
+        </div>
+      
+        <div class="w3-display-container mySlides">
+          <img src="https://pikdo.net/img/k_chani672nx1743309001.jpg?aHR0cHM6Ly9zY29udGVudC1mcng1LTEuY2RuaW5zdGFncmFtLmNvbS92cC9iNWM0N2I0NGM4NzE0NjBiMDA4ZjM3ZjU1NTFlM2Q2Ni81REMyNjQ0MS90NTEuMjg4NS0xNS9lMzUvNTI4MzI2NzFfNDI3NTc2MDkxMzE4Mzk2XzU3ODE4MTE4MzQ2NDM1Mjk1Nl9uLmpwZz9fbmNfaHQ9c2NvbnRlbnQtZnJ4NS0xLmNkbmluc3RhZ3JhbS5jb20mc2U9NyZpZ19jYWNoZV9rZXk9TVRrNE56YzJNakU0T1RrMk9Ua3pNRGMwTlElM0QlM0QuMg==">
+          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
+            <h2 style="color:#CD2E3A"><b>南山首爾塔 남산서울타워</b></h2>
+            <h5 style="color:white"><b>首爾塔爲韓國第一個高塔型的觀光景點。高爲 236.7m 的塔，海拔爲 243m 的南山上，再加上高度 480m. 成爲東南亞最高的塔。1980/10/15 正式對外開放首爾景觀台。也因此，成爲首爾著名的觀光景點，也受遊客的喜愛。2005/12/9 再度重新翻修，變爲華麗耀眼的南山首爾塔。</b></h5>
+          </div>
+        </div>
+      
+        <div class="w3-display-container mySlides">
+          <img src="http://pic.pimg.tw/rachelinkr2013/1393585370-440628508_n.jpg">
+          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
+            <h2 style="color:#CD2E3A"><b>慶熙宮 경희궁</b></h2>
+            <h5 style="color:white"><b>慶熙宮又叫作西門内宮闕，或是西邊的宮闕，也被稱爲西闕。它一直做爲王族的私宅，直到光海君 1616 年，傳聞西門内的位置具有王氣，是爲壓制其王氣。另外建了離宮，名字爲敬德宮。但，因仁祖反正 (朝臣擁戴新君主即位) 後光海君被廢，1760 年時，將敬德宮改名爲慶熙宮。</b></h5>
+          </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+          <img src="https://candicecity.com/wp-content/uploads/flickr/26911420672_0e466e70b9_b.jpg">
+          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
+            <h2 style="color:#CD2E3A"><b>龍頭山公園 용두산공원</b></h2>
+            <h5 style="color:white"><b>龍頭山 (49 公尺) 的位置在釜山市區内的丘陵，是釜山 3 座名山的其中之一。以前在龍山上可從生長繁茂的松樹群的縫隙看見大海，所以，稱爲松峴山。但之後，因着其山勢貌似出海蛟龍的龍頭，給大家一種吞噬來自日本渡海的倭寇的形象。因此，又有個名字叫做龍頭山。</b></h5>
+          </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+          <img src="http://img.ya7.tw/uploads/20171219010819_8.jpg">
+          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
+            <h1 style="color:#CD2E3A"><b>松島天空步道 송도 구름산책로</b></h2>
+            <h5 style="color:white"><b>因爲釜山靠近海邊，所以，釜山自然會有許多地美麗的海邊景點可以放進行程裡。比較知名的三個大海水浴場莫過於就是：海雲台海水浴場、廣安里海水浴場、跟松島海水浴場，也是來到釜山一定要訪的地方。因爲距離和交通的關係，因此，建議大家可以把這兩個景點放在同一天玩。</h5>
+          </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+          <img src="https://photo.settour.com.tw/900x600/https%3A%2F%2Fs2.settour.com.tw%2Fss_img%2FGFG%2F0000%2F0007%2F65%2Fori_2181372.jpg">
+          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
+            <h2 style="color:#CD2E3A"><b>五六島海上天空步道 오륙도 스카이워크</b></h2>
+            <h5 style="color:white"><b>五六島 Skywalk 一帶曾經名字叫 seungdumal, 原本因形如馬鞍被稱爲 seungdumal, 漢字拼音接近「乘頭馬」。之後，末字發音的因素，才變成韓文的 mal. 當地的海女和居民都把這裡稱爲 challokkae, 韓文的意思瘸腳。</b></h5>
+          </div>
+        </div>
+
+        <div class="w3-display-container mySlides">
+          <img src="http://www.wrtimes.co.kr/data/cheditor4/1605/2038915042_dnM2jhkB_ECB695ECA09CEB82A0_EAB3A8EBAAA9ECB695ECA09C_ECB59CEB8C80EC9D98_ED8FACED86A0ECA1B4.jpg">
+          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
+            <h2 style="color:#CD2E3A"><b>甘川洞文化村 부산 감천문화마을</b></h2>
+            <h5 style="color:white"><b>甘川文化村的位置是在山的腳下，呈階梯式聚集在一起的房子以巷弄爲中心點所形成的漂亮村落，被大家稱爲釜山的馬丘比丘。在這村裡，遊客能看得到各式各樣的主題小房子，和巷弄内的早型擺設，凸顯出村民的創意。</b></h5>
+          </div>
+        </div>
+      
+      <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+      
+      </div>
+      
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Section -->
+<p></p>
+<div id="footer">
+    <div class="container text-center">
+      <div class="col-md-8 col-md-offset-2">
+        <h5 style="color:white">&copy; 2019 周柏如</a></h5>
+      </div>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/owl.carousel.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">回上頭 상단</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 </html>
