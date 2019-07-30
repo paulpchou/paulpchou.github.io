@@ -14,7 +14,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-144738305-1');
 </script>
 
@@ -260,8 +259,9 @@ header .intro-text {
 }
 /* About Section */
 #about {
-	padding: 30px 0 80px 0;
+	padding: 0px 0 80px;
 	background: #f6f6f6;
+  position: relative;
 }
 #about h3 {
 	font-size: 22px;
@@ -293,10 +293,16 @@ header .intro-text {
 	line-height: 24px;
 	margin-top: 20px;
 }
+#about {
+  background-image: url('https://source.unsplash.com/3ytjETpQMNY/1600x900');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 /* info Section */
 #services {
 	padding: 30px 0;
-	background: black;
+	background: skyblue;
 }
 #services .service-media {
 	margin: 10px;
@@ -523,7 +529,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
-
 #myBtn {
   display: none;
   position: fixed;
@@ -539,35 +544,28 @@ body {
   padding: 15px;
   border-radius: 50px;
 }
-
 #myBtn:hover {
   background-color: #CD2E3A;
 }
-
 * {
   box-sizing: border-box;
 }
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
 /* Float four columns side by side */
 .column {
   float: left;
   width: 25%;
 }
-
 /* Remove extra left and right margins, due to padding */
 .row {margin: 0 -5px;}
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* Responsive columns */
 @media screen and (max-width: 600px) {
   .column {
@@ -576,7 +574,6 @@ body {
     margin-bottom: 20px;
   }
 }
-
 /* Style the counter cards */
 .card {
   box-shadow: 10px 10px #CD2E3A;
@@ -584,16 +581,8 @@ body {
   text-align: center;
   background-color: #0047A0;
 }
-
 #attractions {
   background-image: url(https://lonelyplanetwp.imgix.net/2018/09/seoul-namsan-nseoul-tower-autumn-d84e51f541c0.jpg?fit=min&q=40&sharp=10&vib=20&w=1470);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-#about {
-  background-image: url('img/clouds.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -628,12 +617,12 @@ figure {
 }
 .fog__img {
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 300vw;
 }
 .fog__img--first {
   background: url('https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png') repeat-x;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   animation: marquee 60s linear infinite;
 }
@@ -707,25 +696,27 @@ figure {
     <div class="row">
       <div class="col-xs-12 col-md-6">
         <div class="about-text">
-          <h2 style="color:#0047A0">關於韓國 한국에 대해서</span></h2>
-          <p><h3 style="color:black"><b>역사 歷史：</b></h3></p>
-          <p><h4 style="color:#CD2E3A;">韓國的歷史，經過人類歷學研究發現，早在 70 萬年前，朝鮮半島就有人類居住。這時期叫做史前時代。根據傳説，神話人物檀君於公元前 2333 年建立了韓國第一個王國~古朝鮮。之後，有幾個部族由滿州南部地區移到朝鮮半島。這時期叫做古朝鮮。朝鮮王朝建立於 14 世紀末期，儒教成爲國教，對於整個社會產生了重大的影響力。西元  1443 年發明了韓文字母。由於日本的侵略 (西元 1592 年，任辰倭亂) 和外國勢力的侵略使朝鮮開始走向衰退。西元 2000 年曆史性的南北韓首腦會談在北韓的首都平壤召開。朝韓分治後，韓國經歷了民主與獨裁統治的反復交替。</h4></p>
+          <p></p>
+          <h2 style="color:white">關於韓國 한국에 대해서</span></h2>
+          <p><h3 style="color:white"><b>역사 歷史</b></h3></p>
+          <p><h4 style="color:white;">韓國的歷史，經過人類歷學研究發現，早在 70 萬年前，朝鮮半島就有人類居住。這時期叫做史前時代。根據傳説，神話人物檀君於公元前 2333 年建立了韓國第一個王國~古朝鮮。之後，有幾個部族由滿州南部地區移到朝鮮半島。這時期叫做古朝鮮。朝鮮王朝建立於 14 世紀末期，儒教成爲國教，對於整個社會產生了重大的影響力。西元  1443 年發明了韓文字母。由於日本的侵略 (西元 1592 年，任辰倭亂) 和外國勢力的侵略使朝鮮開始走向衰退。西元 2000 年曆史性的南北韓首腦會談在北韓的首都平壤召開。朝韓分治後，韓國經歷了民主與獨裁統治的反復交替。</h4></p>
           </div>
-          <p><h3 style="color:black"><b>문화 文化：</b></h3></p>
-          <p><h4 style="color:#CD2E3A;">朝鮮戰爭後朝鮮半島的南北對峙導致了南北朝鮮現代社會化的差異，但雙方傳統文化卻一脈相承。韓國現代社會文化由朝鮮民族傳統文化與現代社會流行文化相結合衍生而來，1948 年朝鮮半島南北對峙以來，南北韓的現代文化出現不同的發展。韓國現代社會文化是朝鮮民族文化現代化的產物。隨着韓國經濟和社會的發展，韓國人的衣食住行等生活方式也發生了變化，從而構築了韓國現代文化。韓國文化在亞洲和世界的流行被稱爲韓流。</h4></p>
+          <p><h3 style="color:white"><b>문화 文化</b></h3></p>
+          <p><h4 style="color:white;">朝鮮戰爭後朝鮮半島的南北對峙導致了南北朝鮮現代社會化的差異，但雙方傳統文化卻一脈相承。韓國現代社會文化由朝鮮民族傳統文化與現代社會流行文化相結合衍生而來，1948 年朝鮮半島南北對峙以來，南北韓的現代文化出現不同的發展。韓國現代社會文化是朝鮮民族文化現代化的產物。隨着韓國經濟和社會的發展，韓國人的衣食住行等生活方式也發生了變化，從而構築了韓國現代文化。韓國文化在亞洲和世界的流行被稱爲韓流。</h4></p>
         </div>
       <div class="col-xs-12 col-md-3">
         <div class="about-media"> <img src="img/bibimbap.png" alt=" "> </div>
         <div class="about-desc">
-          <h3 style="color:black"><b>한국요리 韓國料理：</b></h3>
-          <p><h4 style="color:#0047A0;">韓國料理或韓式料理以清淡爲主，較少油，但多辣。有各式各樣的韓式料理。從古代開始，最主要的主食是米飯。近期，韓國的飲食和各種的蔬菜、肉類、魚類一起組成。泡菜 (發酵的辣白菜), 也是韓國的文化之一。韓國人擺餐桌的特色是全部的飲食同時擺出。傳統韓國飲食分別爲：米飯和粥、湯、砂鍋、燻和燉食品、拌菜、腌海物 (用鹽腌好的海産品)、烤食品、煎餅、餃子。拌飯分兩種：鐵鍋拌飯和石鍋拌飯。鐵鍋拌飯是冷的，但石鍋拌飯是熱的。拌飯是冷的，所以，菜類還是新鮮的，但有的人喜歡蔬菜的料。因爲有些蔬菜的料沒有被煮過，您就能品嘗到配料的新鮮感。</h4></p>
+          <h3 style="color:white"><b>한국요리 韓國料理</b></h3>
+          <p><h4 style="color:white;">韓國料理或韓式料理以清淡爲主，較少油，但多辣。有各式各樣的韓式料理。從古代開始，最主要的主食是米飯。近期，韓國的飲食和各種的蔬菜、肉類、魚類一起組成。泡菜 (發酵的辣白菜), 也是韓國的文化之一。韓國人擺餐桌的特色是全部的飲食同時擺出。傳統韓國飲食分別爲：米飯和粥、湯、砂鍋、燻和燉食品、拌菜、腌海物 (用鹽腌好的海産品)、烤食品、煎餅、餃子。拌飯分兩種：鐵鍋拌飯和石鍋拌飯。鐵鍋拌飯是冷的，但石鍋拌飯是熱的。拌飯是冷的，所以，菜類還是新鮮的，但有的人喜歡蔬菜的料。因爲有些蔬菜的料沒有被煮過，您就能品嘗到配料的新鮮感。</h4></p>
         </div>
       </div>
       <div class="col-xs-12 col-md-3">
+        <p></p>
         <div class="about-media"> <img src="img/skmap.png" alt=" "> </div>
         <div class="about-desc">
-          <h3 style="color:black"><b>경제 經濟：</h3></b>
-          <p><h4 style="color:#0047A0;">大韓民國的經濟是世界主要經濟體之一，經濟合作與發展組織（OECD）成員，亞洲四小龍之一。韓國同時也是未來 11 國中唯一一個發達國。據世界銀行的統計，韓國 2014 年國内生產總值按國際匯率和相對購買力指標計算在世界排名皆位居第 13 位。韓國是世界第 6 大出口國和第 9 大進口國。截至 2015 年 3 月，韓國已與包括美國、歐盟、中國在内的 52 個國家簽訂了 14 個自由貿易協定，其「經濟領土」規模達世界 GDP 的 73.5%. 自 20 世紀 60 年代，韓國根據本國比較優勢，積極參與國際分工，使經濟發展進入了快速發展的軌道。</h4></p>
+          <h3 style="color:white"><b>경제 經濟</h3></b>
+          <p><h4 style="color:white;">大韓民國的經濟是世界主要經濟體之一，經濟合作與發展組織（OECD）成員，亞洲四小龍之一。韓國同時也是未來 11 國中唯一一個發達國。據世界銀行的統計，韓國 2014 年國内生產總值按國際匯率和相對購買力指標計算在世界排名皆位居第 13 位。韓國是世界第 6 大出口國和第 9 大進口國。截至 2015 年 3 月，韓國已與包括美國、歐盟、中國在内的 52 個國家簽訂了 14 個自由貿易協定，其「經濟領土」規模達世界 GDP 的 73.5%. 自 20 世紀 60 年代，韓國根據本國比較優勢，積極參與國際分工，使經濟發展進入了快速發展的軌道。</h4></p>
         </div>
       </div>
     </div>
@@ -736,65 +727,65 @@ figure {
 <div id="services">
   <div class="container">
     <div class="col-md-10 col-md-offset-1 section-title text-center">
-      <h2>韓國資料 한국에 관한 정보</h2>
+      <h2 style="color:#CD2E3A">韓國資料 한국에 관한 정보</h2>
     </div>
     <div class="row">
       <div class="col-md-3 text-center">
         <div class="service-media"> <img src="https://www.nationsonline.org/gallery/Korea_South/Seoraksan-Inje-gun-South-Korea.jpg" alt=" "> </div>
         <div class="service-desc">
           <h3 style="color:#CD2E3A"><u>國名 나라 이름</u></h3>
-          <h4 style="color:white">韓國，南韓，大韓民國</h4>
+          <h4 style="color:black">韓國，南韓，大韓民國</h4>
         </div>
       </div>
       <div class="col-md-3 text-center">
         <div class="service-media"> <img src="https://sa.kapamilya.com/absnews/abscbnnews/media/2017/overseas/03/21/south-korea-flag-032117.jpg" alt=" "> </div>
         <div class="service-desc">
           <h3 style="color:#CD2E3A"><u>國旗 국기</u></h3>
-          <h4 style="color:white;">太極旗</h4>
+          <h4 style="color:black">太極旗</h4>
         </div>
       </div>
       <div class="col-md-3 text-center">
         <div class="service-media"> <img src="http://image.ohmynews.com/down/images/1/todd_206624_1[274229].gif" alt=" "> </div>
         <div class="service-desc">
           <h3 style="color:#CD2E3A"><u>國歌 국가</u></h3>
-          <h4 style="color:white">愛國歌</h4>
+          <h4 style="color:black">愛國歌</h4>
         </div>
       </div>
       <div class="col-md-3 text-center">
         <div class="service-media"> <img src="http://tong.visitkorea.or.kr/img/vk/cht/page/img_6_1_4.jpg" alt=" "> </div>
         <div class="service-desc">
           <h3 style="color:#CD2E3A"><u>國花 국화</u></h3>
-          <h4 style="color:white">無窮花</h4>
+          <h4 style="color:black">無窮花</h4>
         </div>
       </div>
       <div class="col-md-3 text-center">
         <div class="service-media"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLaNmAHkDtOSVC_dZ_yU-EebODN0JVYqVNUiNSyZaNiNqJxdf3" alt=" "> </div>
         <div class="service-desc">
           <h3 style="color:#0047A0"><u>人口 인구</u></h3>
-          <h4 style="color:white">51,279,478 (2019)</h4>
+          <h4 style="color:black">51,279,478 (2019)</h4>
         </div>
       </div>
       <div class="col-md-3 text-center">
         <div class="service-media"> <img src="img/seoul.jpg" alt=" "> </div>
         <div class="service-desc">
           <h3 style="color:#0047A0"><u>首都 자본</u></h3>
-          <h4 style="color:white">首爾</h4>
+          <h4 style="color:black">首爾</h4>
         </div>
       </div>
       <div class="col-md-3 text-center">
         <div class="service-media"> <img src="https://media.cntraveler.com/photos/5a7235f9ee3bb7795af31910/4:3/w_480,c_limit/Skyline-of-Busan-GettyImages-187845112.jpg" alt=" "> </div>
         <div class="service-desc">
           <h3 style="color:#0047A0"><u>主要城市 주요 도시</u></h3>
-          <h4 style="color:white">首爾、釜山、仁川、</h4>
-          <h4 style="color:white">光州、大邱、大田、</h4>
-          <h4 style="color:white">慶洲、釜山</h4>
+          <h4 style="color:black">首爾、釜山、仁川、</h4>
+          <h4 style="color:black">光州、大邱、大田、</h4>
+          <h4 style="color:black">慶洲、釜山</h4>
         </div>
       </div>
       <div class="col-md-3 text-center">
         <div class="service-media"> <img src="https://modernseoul.files.wordpress.com/2011/09/south-korea-50000-won.jpg" alt=" "> </div>
         <div class="service-desc">
           <h3 style="color:#0047A0"><u>貨幣 통화</u></h3>
-          <h4 style="color:white">韓元、 ₩, KRW</h4>
+          <h4 style="color:black">韓元、 ₩, KRW</h4>
         </div>
       </div>
     </div>
@@ -805,42 +796,42 @@ figure {
 <div id="weather">
   <div class="container">
     <div class="section-title text-center center">
-      <h2 style="color:#0047A0">韓國氣候 한국 기후</h2>
+      <h2 style="color:white">韓國氣候 한국 기후</h2>
     </div>
     <div class="row">
       <div class="column">
         <div class="card">
             <img src="https://www.17-minute-languages.com/grafik/Big/Koreanisch-Big-02.jpg" class="img-responsive" alt="봄">
-            <h3 style="color:#CD2E3A"><b>春 봄</b></h3>
-            <h5 style="color:white">春季爲 3 月初-5 月底</h5>
-            <h5 style="color:black">日夜溫差大，早晚涼，白天溫暖。請記得要攜帶薄長袖和輕便的外套。春天也是韓國的櫻花季節。</h5>
+            <font size="5" color="#CD2E3A"><b>春 봄</b></font>
+            <h4 style="color:white">春季爲 3 月初-5 月底</h4>
+            <font size="3" color="white">日夜溫差大，早晚涼，白天溫暖。請記得要攜帶薄長袖和輕便的外套。春天也是韓國的櫻花季節。</font>
         </div>
       </div>
     
       <div class="column">
         <div class="card">
             <img src="https://i1.wp.com/en.blog.kkday.com/wp-content/uploads/batch_sea_Ashutterstock_1081733099.jpg?fit=900%2C600&ssl=1" class="img-responsive" alt="봄">
-            <h3 style="color:#CD2E3A"><b>夏 여름</b></h3>
-            <h5 style="color:white">夏季爲 6 月初-9 月底</h5>
-            <h5 style="color:black">高溫潮濕，多帶涼快夏衣，並攜帶輕便的外套，避免天氣突然變化。7-8 月是梅雨季，多雨的時候。須攜帶雨具。</h5>
+            <font size="5" color="#CD2E3A"><b>夏 여름</b></font>
+            <h4 style="color:white">夏季爲 6 月初-9 月底</h4>
+            <font size="3" color="white">高溫潮濕，多帶涼快夏衣，並帶輕便的外套，避免天氣突然變化。7-8 月是梅雨季，多雨的時候。須帶雨具。</font>
 	</div>
       </div>
       
       <div class="column">
         <div class="card">
             <img src="https://miro.medium.com/max/1200/0*1YaM7qxs0y3jdQTC" class="img-responsive" alt="봄">
-            <h3 style="color:#CD2E3A"><b>秋 가을</b></h3>
-            <h5 style="color:white">秋季爲 9 月中-11 月中</h5>
-            <h5 style="color:black">開始刮涼風，晴朗的天氣較多，可多外出。秋季和春季一樣，日夜溫差大。要記得攜帶外套、圍巾和絲巾。</h5>
+            <font size="5" color="#CD2E3A"><b>秋 가을</b></font>
+            <h4 style="color:white">秋季爲 9 月中-11 月中</h4>
+            <font size="3" color="white">開始刮涼風，晴朗的天氣較多，可多外出。秋季和春季一樣，日夜溫差大。要記得攜帶外套、圍巾和絲巾。</font>
         </div>
       </div>
       
       <div class="column">
         <div class="card">
             <img src="http://www.arounddb.com/wp-content/uploads/2017/05/1495183992.jpg" class="img-responsive" alt="봄">
-            <h3 style="color:#CD2E3A"><b>冬 겨울</b></h3>
-            <h5 style="color:white">冬季爲 11 月底-2 月底</h5>
-            <h5 style="color:black">氣溫都在攝氏零度以下，下雪的機會比較多。要攜帶保暖的厚 衣物、圍巾，手套，等。</h5>
+            <font size="5" color="#CD2E3A"><b>冬 겨울</b></font>
+            <h4 style="color:white">冬季爲 11 月底-2 月底</h4>
+            <font size="3" color="white">冬季的氣溫都在攝氏零度以下，下雪的機率比較高。要攜帶保暖的厚 衣物、圍巾，手套，等。</font>
         </div>
       </div>
     </div>
@@ -855,28 +846,29 @@ figure {
   <div class="overlay">
     <div class="container">
       <div class="section-title">
+        <p></p>
         <h2>韓文簡介 한국 소개</h2>
       </div>
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
           <div id="testimonial" class="owl-carousel owl-theme">
             <div class="item">
-              <p>韓文 한국어 通用於韓半島和中國的東北、俄羅斯遠東地區和日本等韓民族或朝鮮民族聚居地區所使用的語言。就在中國 1897 年，大韓帝國成立之前，該語言只是叫做「朝鮮語」或「朝語」。</p>
+                <font size="4" color="white">韓文 한국어 通用於韓半島和中國的東北、俄羅斯遠東地區和日本等韓民族或朝鮮民族聚居地區所使用的語言。就在中國 1897 年，大韓帝國成立之前，該語言只是叫做「朝鮮語」或「朝語」。</font>
               </div>
               <div class="item">
-              <p>中華人民共和國於 1949 年建國之後，視同屬社會主義陣營的朝鮮民主主義人民共和國爲整個朝鮮半島的唯一合法政府。</p>
+                  <font size="4" color="white">中華人民共和國於 1949 年建國之後，視同屬社會主義陣營的朝鮮民主主義人民共和國爲整個朝鮮半島的唯一合法政府。</font>
               </div>
             <div class="item">
-              <p>所以，將中國國内和北韓半島所有關於朝鮮族的文化和國家的字詞以「朝鮮」來稱呼。該語言也因而繼續稱爲「朝鮮語」。</p>
+                <font size="4" color="white">所以，將中國國内和北韓半島所有關於朝鮮族的文化和國家的字詞以「朝鮮」來稱呼。該語言也因而繼續稱爲「朝鮮語」。</font>
               </div>
             <div class="item">
-              <p>但在 1992 年，中國與大韓民國建交之後，與韓國的直接文化和經濟交流迅速發展，大韓民國資本大量流入中國，該語言的課本、辭典等幾乎都以「韓國語」的名稱發行而且内容以韓國詞彙爲主。因此，現在「韓語」和「韓國語」的稱呼在中國更加普遍。</p>
+                <font size="4" color="white">但在 1992 年，中國與大韓民國建交之後，與韓國的直接文化和經濟交流迅速發展，大韓民國資本大量流入中國，該語言的課本、辭典等幾乎都以「韓國語」的名稱發行而且内容以韓國詞彙爲主。因此，現在「韓語」和「韓國語」的稱呼在中國更加普遍。</font>
                </div>
                <div class="item">
-                <p><b>母音 21</b> (ㅏ~ㄚ) (ㅓ~ㄛ) (ㅗ~ㄡ) (ㅜ~ㄨ) (ㅡ~ㄜ) (ㅣ~一) (ㅘ~ㄨㄚ) (ㅑ~ㄧㄚ) (ㅕ~一ㄛ) (ㅛ~一ㄡ) (ㅠ~一ㄨ) (ㅐ~ㄝ) (ㅔ~ㄝ) (ㅙ~ㄨㄟ) (ㅢ~ㄜ一) (ㅟ~ㄨ一) (ㅝ~ㄨㄛ) (ㅞ~ㄨㄟ) (ㅒ~一ㄝ) (ㅖ~一ㄝ) (ㅚ~ㄨㄟ)</p>
+                  <font size="4" color="white"><b>母音 21</b> (ㅏ~ㄚ) (ㅓ~ㄛ) (ㅗ~ㄡ) (ㅜ~ㄨ) (ㅡ~ㄜ) (ㅣ~一) (ㅘ~ㄨㄚ) (ㅑ~ㄧㄚ) (ㅕ~一ㄛ) (ㅛ~一ㄡ) (ㅠ~一ㄨ) (ㅐ~ㄝ) (ㅔ~ㄝ) (ㅙ~ㄨㄟ) (ㅢ~ㄜ一) (ㅟ~ㄨ一) (ㅝ~ㄨㄛ) (ㅞ~ㄨㄟ) (ㅒ~一ㄝ) (ㅖ~一ㄝ) (ㅚ~ㄨㄟ)</font>
                  </div>
                  <div class="item">
-                  <p><b>子音 19</b> (ㄱ~ㄎ ㄍ) (ㄷ~ㄊ ㄉ) (ㅂ~ㄆ ㄅ) (ㅈ~ㄘ ㄓ) (ㅅ~ㄙ ㄒ) (ㄲ~重 ㄍ)(ㄸ~重 ㄉ) (ㅃ~重 ㄅ) (ㅉ~重 ㄓ) (ㅆ~ㄙ ㄒ) (ㅋ~ㄎ 氣) (ㅌ~ㄊ 氣) (ㅍ~ㄆ 氣) (ㅊ~ㄘ 氣) (ㅎ~ㄏ 氣) (ㄴ~ㄋ) (ㄹ~ㄌ) (ㅁ~ㄇ) (ㅇ~---)</p>
+                    <font size="4" color="white"><b>子音 19</b> (ㄱ~ㄎ ㄍ) (ㄷ~ㄊ ㄉ) (ㅂ~ㄆ ㄅ) (ㅈ~ㄘ ㄓ) (ㅅ~ㄙ ㄒ) (ㄲ~重 ㄍ)(ㄸ~重 ㄉ) (ㅃ~重 ㄅ) (ㅉ~重 ㄓ) (ㅆ~ㄙ ㄒ) (ㅋ~ㄎ 氣) (ㅌ~ㄊ 氣) (ㅍ~ㄆ 氣) (ㅊ~ㄘ 氣) (ㅎ~ㄏ 氣) (ㄴ~ㄋ) (ㄹ~ㄌ) (ㅁ~ㄇ) (ㅇ~---)</font>
                    </div>
           </div>
         </div>
@@ -919,7 +911,7 @@ figure {
         </div>
       
         <div class="w3-display-container mySlides">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Korea-Seoul-Blue_House_%28Cheongwadae%29_Reception_Center_0688%269-07_cropped.jpg">
+          <img src="https://www1.president.go.kr/storage/thumbnail/Ptrbpgv3tI1WCeniQihYUHJEdzPPJW8mimXfaTZi.jpeg">
           <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
             <h2 style="color:white"><b>青瓦台 청와대</b></h2>
               <h4 style="color:white"><b>青瓦台是大韓民國總統的官邸。主要由本館、迎賓館、春秋館、綠地園、無窮花花園、七宮等建築物所組成。大韓民國總統府精神的本館屋頂，使用了共約 15 萬塊青瓦所築成，和曲線條屋頂相映成趣，爲要呈現出國家的美麗，使青瓦台得名。</b></h4>
@@ -951,7 +943,7 @@ figure {
         </div>
       
         <div class="w3-display-container mySlides">
-          <img src="https://i2.wp.com/image.teavanilla.com/2017/01/DDP01_thumb.jpg?resize=604%2C404&ssl=1">
+          <img src="http://www.ddmax.co.kr/files/attach/images/134/417/001/a5cea73b4c95d7e8e69d9a4ae8314e7e.png">
           <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
             <h2 style="color:white"><b>東大門設計廣場 동대문디자인플라자</b></h2>
               <h4 style="color:white"><b>東大門設計廣場 (DDP) 位置於東大門歷史文化公園地鐵站的複合文化空間，它名字拼成 Dream, Design, Play. 這裡有蠻多的展覽、服裝秀、研討會、會議等還外國内的重要活動的舉辦地。同時，也帶動新品問世與時尚趨勢。</b></h4>
@@ -1013,6 +1005,30 @@ figure {
             <h4 style="color:white"><b>甘川文化村的位置是在山的腳下，呈階梯式聚集在一起的房子以巷弄爲中心點所形成的漂亮村落，被大家稱爲釜山的馬丘比丘。在這村裡，遊客能看得到各式各樣的主題小房子，和巷弄内的早型擺設，凸顯出村民的創意。</b></h4>
           </div>
         </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="https://m.visitkorea.or.kr/image/view/44/1933044_image2_1.jpg">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
+              <h2 style="color:white"><b>松月洞童話村 송월동동화마을</b></h2>
+              <h4 style="color:white"><b>松月洞童話村位於仁川市的中國城附近，且利用花朵和大家所熟悉的童話故事爲主題，爲了打造童心未泯的童話村。色彩繽紛的牆壁畫上，可以看到小紅帽、小木偶、白雪公主等童話故事的主角。雖然它是牆壁畫，但是增加了 3D 元素立體的呈現，讓來到這裡的遊客可以多多地投入在這個童話王國的氣氛的當中。</b></h4>
+            </div>
+          </div>
+
+          <div class="w3-display-container mySlides">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Songdo_Convensia_and_Central_Park_View.jpg">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
+                <h2 style="color:white"><b>松島中央公園 송도중앙공원</b></h2>
+                <h4 style="color:white"><b>仁川市的松島中央公園的位置在松島國際都市的海水公園，也是在灰色高樓大廈林立的城市中。這是爲了仁川市民帶來綠意的樂園。人工的水道和水上的計程車行駛其間。公園被分爲散步的公園、露台庭園、草地園等，一共有五種不同的主題庭園，爲了呈現出不同美麗的風景和風情。</b></h4>
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+                <img src="https://farm5.staticflickr.com/4279/35772309095_a28da93c83_c.jpg">
+                <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-clear">
+                  <h2 style="color:white"><b>E WORLD 83 塔 이월드 83 타워</b></h2>
+                  <h4 style="color:white"><b>E WORLD 83 塔有歐洲的味道的主題公園。公園裡面瀑布、噴泉、遊樂設施、展示、藝術空間、飯店，等設施，讓男女老少感到喜歡。各式各樣的主題廣場讓遊客體驗多樣的新鮮感受。83 塔象徵了大邱的地標。</b></h4>
+                </div>
+              </div>
       
       <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
       <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
@@ -1067,7 +1083,6 @@ figure {
 <script>
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("myBtn").style.display = "block";
@@ -1075,7 +1090,6 @@ function scrollFunction() {
     document.getElementById("myBtn").style.display = "none";
   }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
