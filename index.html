@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel='stylesheet' href='https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="css/cssstyle.css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144738305-1"></script>
@@ -21,7 +20,6 @@
   </script>
   <!-- Favicons
     ================================================== -->
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
@@ -797,7 +795,8 @@
     /* Footer Section*/
     #footer {
       background: #0047A0;
-      padding: 15px 0 20px;
+      padding: 20px 0 20px;
+      font-size: 15px;
     }
 
     #footer h3 {
@@ -895,7 +894,7 @@
       position: fixed;
       bottom: 7px;
       right: 10pt;
-      background: #CD2E3A;
+      background: black;
       color: #fff;
       padding: 10px 15px;
       display: none;
@@ -907,7 +906,7 @@
     #back-to-top:hover {
       color: #fff;
       text-decoration: none;
-      background: black;
+      background: lightcoral;
     }
 
     figure {
@@ -1000,11 +999,11 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#about" class="page-scroll nav-link"><b>關於韓國</b></a></li>
-                    <li class="nav-item"><a href="#services" class="page-scroll nav-link"><b>韓國資料</b></a></li>
-                    <li class="nav-item"><a href="#weather" class="page-scroll nav-link"><b>韓國氣候</b></a></li>
-                    <li class="nav-item"><a href="#language" class="page-scroll nav-link"><b>韓文簡介</b></a></li>
-                    <li class="nav-item"><a href="#attractions" class="page-scroll nav-link"><b>景點介紹</b></a></li>
+                    <li class="nav-item"><a href="#about" class="page-scroll nav-link"><b><h3>關於韓國</b></h3></a></li>
+                    <li class="nav-item"><a href="#services" class="page-scroll nav-link"><h3><b>韓國資料</b></h3></a></li>
+                    <li class="nav-item"><a href="#weather" class="page-scroll nav-link"><h3><b>韓國氣候</b></h3></a></li>
+                    <li class="nav-item"><a href="#language" class="page-scroll nav-link"><h3><b>韓文簡介</b></h3></a></li>
+                    <li class="nav-item"><a href="#attractions" class="page-scroll nav-link"><h3><b>景點介紹</b></h3></a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -1335,7 +1334,6 @@
   crossorigin="anonymous"></script>
   <script src='https://unpkg.com/popper.js@1.12.9/dist/umd/popper.js'></script>
   <script src='https://unpkg.com/bootstrap@4.0.0/dist/js/bootstrap.js'></script>
-  <script src="js/jsscript.js"></script>
 
   <script type="text/javascript" src="js/nivo-lightbox.js"></script>
   <script type="text/javascript" src="js/jquery.isotope.js"></script>
@@ -1363,60 +1361,6 @@
       }, 1800);
       return false;
     });
-
-    (function ($) {
-      "use strict";
-      // Auto-scroll
-      $('#myCarousel').carousel({
-        interval: 5000
-      });
-
-      // Control buttons
-      $('.next').click(function () {
-        $('.carousel').carousel('next');
-        return false;
-      });
-      $('.prev').click(function () {
-        $('.carousel').carousel('prev');
-        return false;
-      });
-
-      // On carousel scroll
-      $("#myCarousel").on("slide.bs.carousel", function (e) {
-        var $e = $(e.relatedTarget);
-        var idx = $e.index();
-        var itemsPerSlide = 3;
-        var totalItems = $(".carousel-item").length;
-        if (idx >= totalItems - (itemsPerSlide - 1)) {
-          var it = itemsPerSlide -
-            (totalItems - idx);
-          for (var i = 0; i < it; i++) {
-            // append slides to end 
-            if (e.direction == "left") {
-              $(
-                ".carousel-item").eq(i).appendTo(".carousel-inner");
-            } else {
-              $(".carousel-item").eq(0).appendTo(".carousel-inner");
-            }
-          }
-        }
-      });
-    })
-      (jQuery);
   </script>
-  
-<script>
-$(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-</script>
 </body>
 </html>
