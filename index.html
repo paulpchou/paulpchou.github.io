@@ -978,6 +978,24 @@
     .carousel-item {
       margin-right: 0;
     }
+    .glow {
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
   </style>
 </head>
 <style>
@@ -993,7 +1011,7 @@
   <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
-      <h2 style="color:#0047A0"><b>介紹韓國 한국 소개</b></h2>
+      <h2 class="glow"><b>介紹韓國 한국 소개</b></h2>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
