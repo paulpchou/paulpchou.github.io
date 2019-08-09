@@ -125,108 +125,98 @@
       margin-bottom: 20px;
       border: 0;
     }
-    /* Navigation */
-    #menu {
-      padding: 20px;
-      transition: all 0.8s;
-      background-color: rgba(248, 248, 248, 0);
+    ul{
+  padding: 0 60px;
+  list-style-type: none;
+}
+  li{
+    padding: 0px 20px;
+    line-height: 3;
+  }
+  li a{
+    font-size: 20px;
+    color: #fff;
+
+
+  }
+  .navbar-expand-md .navbar-nav .nav-link{
+    padding: 5px 15px 5px 15px;
+  }
+  li a:hover{
+    color: #fff;
+    background: #9c9999;
+  }
+  .navbar{
+    padding: 0;
+  }
+  #top li{
+    padding: 0;
+    line-height: 1.8;
+
+  }
+  #top li a{
+    font-size: 16px;
+    padding: 0;
+  }
+  #top li a:hover{
+    background: none;
+    text-decoration: none;
+  }
+  .col-md-2 .fab{
+    font-size: 20px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    
+  }
+  .navbar-brand img{
+    height: 60px;
+
+  }
+  .navbar-toggler{
+    color: #fff;
+  }
+  .fas:hover,.fab:hover{
+    color: #E5E7E9;
+
+  }
+  .ownbg{
+    background: #3f51b5!important;
+
+  }
+  @media(max-width: 992px){
+  .col-md-2 .fab{
+    font-size: 18px;
+    padding-right: 0;
+
+    
+  }
+  }
+  @media(max-width: 768px){
+    #top{
+      display: none;
     }
-    #menu.navbar-default {
-      background-color: transparent;
-      border-color: transparent;
-    }
-    #menu a.navbar-brand {
-      font-size: 26px;
-      font-weight: 600;
-      color: #eee;
-    }
-    #menu.navbar-default .navbar-nav>li>a {
-      text-transform: uppercase;
-      color: #CD2E3A;
-      font-size: 24px;
-      font-weight: 400;
-      letter-spacing: 1px;
-      padding: 8px 2px;
-      border-radius: 0;
-      margin: 9px 20px 0 20px;
-    }
-    #menu.navbar-default .navbar-nav>li>a:hover {
-      color: #CD2E3A;
-    }
-    .on {
-      padding: 0 !important;
-      padding: 3px 0 !important;
-    }
-    .navbar-fixed-top {
-      padding: 10px !important;
-      background-color: skyblue !important;
-      height: 80px;
-    }
-    .navbar-default .navbar-nav>.active>a,
-    .navbar-default .navbar-nav>.active>a:hover,
-    .navbar-default .navbar-nav>.active>a:focus {
-      color: #CD2E3A !important;
-      background-color: transparent;
-    }
-    .nav-item{
-      font-size: 28px;
-    }
-    .navbar-toggle {
-      border-radius: 0;
-    }
-    .navbar-default .navbar-toggle:hover,
-    .navbar-default .navbar-toggle:focus {
-      background-color: #fff;
-      border-color: #fff;
-    }
-    .navbar-default .navbar-toggle:hover>.icon-bar {
-      background-color: #6aaf08;
-    }
-    .section-title {
-      margin-bottom: 70px;
-    }
-    .section-title p {
-      font-size: 18px;
-      color: #666;
-    }
-    .btn-custom {
-      text-transform: uppercase;
-      color: #fff;
-      background-color: #6aaf08;
-      padding: 14px 20px;
-      letter-spacing: 1px;
-      margin: 0;
-      font-size: 17px;
-      font-weight: 400;
-      border-radius: 6px;
-      margin-top: 20px;
-      transition: all 0.3s;
-    }
-    .btn-custom:hover,
-    .btn-custom:focus,
-    .btn-custom.focus,
-    .btn-custom:active,
-    .btn-custom.active {
-      color: #fff;
-      background-color: #5f9d07;
-    }
-    .btn:active,
-    .btn.active {
-      background-image: none;
-      outline: 0;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-    }
-    a:focus,
-    .btn:focus,
-    .btn:active:focus,
-    .btn.active:focus,
-    .btn.focus,
-    .btn:active.focus,
-    .btn.active.focus {
+     .navbar-brand img{
+    height: 50px;
+
+  }
+    .navbar-dark .navbar-toggler{
       outline: none;
-      outline-offset: none;
+      border-color: rgba(255, 255, 255, 0);
     }
+    ul,li{
+      padding: 0;
+      text-align: center;
+
+    }
+    .navbar-nav{
+      padding-bottom: 40px;
+    }
+ 
+  }
+  * {
+    font-family: "微軟正黑體";
+  }
     /* Header Section */
     .intro {
       display: table;
@@ -654,14 +644,14 @@
     }
     #back-to-top {
       position: fixed;
-      bottom: 8px;
+      bottom: 14px;
       right: 10pt;
       background: black;
       color: #fff;
       padding: 10px 15px;
       display: none;
       transition: 0.5s;
-      font-size: 20px;
+      font-size: 12px;
     }
     #back-to-top:focus,
     #back-to-top:hover {
@@ -729,29 +719,6 @@
     .carousel-item {
       margin-right: 0;
     }
-    .glow {
-  font-size: 1.5em;
-  color: #fff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
-@media screen and (max-width: 600px) {
-  header .intro-text {
-  position: relative;
-  z-index: -1;
-}
-}
 
 * {
     font-family: "微軟正黑體";
@@ -760,41 +727,37 @@
   </style>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target="navbar-toggler">
-  <!-- Navigation
-    ==========================================-->
-  <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <h2 class="glow"><b>韓國歡迎您</b></h2>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark ownbg">
+      <a class="navbar-brand text-white pl-5" href="#"><img src="img/skflag.jpg"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="#about" class="page-scroll nav-link">
-            <b>關於韓國 </b>
-              </a></li>
-          <li class="nav-item"><a href="#services" class="page-scroll nav-link">
-              <b>韓國資料</b>
-            </a></li>
-          <li class="nav-item"><a href="#weather" class="page-scroll nav-link">
-              <b>韓國氣候</b>
-            </a></li>
-          <li class="nav-item"><a href="#language" class="page-scroll nav-link">
-             <b>韓文簡介</b>
-            </a></li>
-          <li class="nav-item"><a href="#attractions" class="page-scroll nav-link">
-              <b>景點介紹</b>
-            </a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#home"><b>回首頁</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about"><b>關於韓國</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services"><b>韓國資料</b></a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#weather"><b>韓國氣候</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#language"><b>韓文簡介</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#attractions"><b>景點介紹</b></a>
+          </li>  
         </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
+      </div>  
+    </nav>
+    </header>
   <!-- Header -->
   <header id="header">
     <div class="intro">
