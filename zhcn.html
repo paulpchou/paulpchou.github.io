@@ -1,0 +1,1899 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>简体中文版</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Reaping Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	
+	<!--// Meta tag Keywords -->
+    <!-- css files -->
+	<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+	<link rel="stylesheet" href="css/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+	<!--web font-->
+	  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+	<!--//web font-->
+
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- ... -->
+
+<link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
+	<style>
+	body{
+	padding:0;
+	margin:0;
+	background-image: url(images/seoulkorea.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+	position:relative;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body a{
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+	cursor:pointer !important;
+}
+button,.btn{
+	cursor:pointer !important;
+}
+a:hover{
+	text-decoration:none;
+}
+input[type="button"],input[type="submit"],.contact-form input[type="submit"]{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;	
+	font-family: "微軟正黑體";
+	font-weight: bold !important;
+}	
+p {
+    margin: 0;
+    line-height: 1.8em;
+    font-size: 16px;
+    color: #777;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+label{
+	margin:0;
+}
+img{
+	width:100%;
+}
+
+/*-- header --*/
+
+/* CSS Document */
+
+header {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+}
+
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+/* Giving a background-color to the nav container. */
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+
+#logo a {
+    float: left;
+    display: initial;
+    margin: 0;
+    color: white;
+}
+
+#logo a span {
+    color: #fff;
+}
+.logo h1 a {
+    font-size: 30px;
+    text-transform: capitalize;
+    display: initial;
+    margin: 0;
+    letter-spacing: 0.02em;
+    line-height: 1.3em;
+    color: #fff;
+	font-weight: 600;
+	font-family: "微軟正黑體";
+}
+nav.mnu {
+    background: rgba(51, 51, 51, 0.68);
+    padding: 1.3em 1em;
+    border-bottom: 6px solid #CD2E3A;
+}
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+
+nav ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+/* Positioning the navigation items inline */
+
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+}
+
+/* Styling the links */
+
+nav a {
+        color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.1em;
+    letter-spacing: 0.075em;
+}
+
+
+nav ul li ul li:hover {
+    background: #f8f9fa;
+}
+
+/* Background color change on Hover */
+
+nav a:hover {
+    color:#ffb500;
+}
+
+.menu li.active a {
+    color: #ffb500;
+	font-weight: 600;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    /* has to be the same number as the "line-height" of "nav a" */
+    top: 30px;
+    background: #fff;
+    padding: 10px;
+}
+
+/* Display Dropdowns on Hover */
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul li a {
+    color: #333;
+    padding: 5px 10px;
+    display: block;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+    left: 170px;
+}
+
+
+/* Change ' +' in order to change the Dropdown symbol */
+
+li > a:only-child:after {
+    content: '';
+}
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width: 768px) {
+
+    #logo {
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+    .toggle + a,
+    .menu {
+        display: none;
+    }
+
+    /* Stylinf the toggle lable */
+
+  .toggle {
+    display: block;
+    padding: 4px 15px;
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+    float: right;
+    background-color: #ffffff;
+    color: #333;
+    cursor: pointer;
+}
+    .menu .toggle {
+        float: none;
+        text-align: center;
+        margin: auto;
+        width: 80%;
+        padding: 5px;
+        font-weight: normal;
+        font-size: 16px;
+		letter-spacing: 1px;
+    }
+
+    .toggle:hover {
+        color: #333;
+        background-color: #fff;
+    }
+
+    /* Display Dropdown when clicked on Parent Lable */
+    [id^=drop]:checked + ul {
+        display: block;
+        background: rgba(16, 16, 16, 0.85);
+        padding: 15px 0;
+        text-align: center;
+		width: 100%;
+    }
+
+    /* Change menu item's width to 100% */
+    nav ul li {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+    }
+
+    nav a:hover,
+    nav ul ul ul a {
+        background-color: transparent;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a,
+    nav ul ul ul a {
+        padding: 14px 20px;
+        color: #FFF;
+        font-size: 17px;
+    }
+
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: #212121;
+    }
+
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+        float: none;
+        position: static;
+        color: #ffffff;
+        /* has to be the same number as the "line-height" of "nav a" */
+    }
+
+    /* Hide menus on hover */
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul {
+        display: none;
+    }
+
+    /* Fisrt Tier Dropdown */
+    nav ul ul li {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul ul ul li {
+        position: static;
+        /* has to be the same number as the "width" of "nav ul ul li" */
+    }
+    nav ul ul li a {
+        color: #fff;
+        font-size: 0.85em;
+    }
+}
+
+@media all and (max-width: 330px) {
+
+    nav ul li {
+        display: block;
+        width: 94%;
+    }
+}
+/* header */
+ h2.tittle {
+    font-size: 2.2em;
+    color: #52575c;
+    line-height: 1em;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-family: "微軟正黑體";
+}
+
+/*-- modal --*/
+.modal-body {
+    font-size: 15px;
+    letter-spacing: .5px;
+    line-height: 28px;
+    color: #666;
+}
+.modal-title {
+    font-size: 28px !important;
+    font-weight: 700;
+    padding: 0 !important;
+    letter-spacing: 2px;
+	color: #333;
+}
+.modal-title span.fas{
+    color: #fd5c63;
+}
+.modal-title span.logo{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+* body {
+	font-family: "微軟正黑體";
+}
+/*-- //modal --*/
+/*-- banner --*/
+.banner{
+	background:url(images/banner1.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	min-height:765px;
+	position: relative;
+}
+.agile_banner_info {
+    padding: 45em 0em 0em;
+}
+.agile_banner_info1{
+	margin-left:0em;
+}
+.banner_agile_para h2 {
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5em;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    text-align: center;
+    line-height: 1.9em;
+    margin: 0;
+    vertical-align: text-bottom;
+}
+.row.banner_agile_para {
+    background: rgba(27, 27, 27, 0.75);
+    padding: 1em;
+    margin: 0;
+}
+.agile_banner_info a {
+    padding: 12px 26px;
+    color: #fff;
+    background: #ffb500;
+    font-size: 1em;
+    letter-spacing: 0.075em;
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 0em;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+.agile_banner_info a:hover {
+    background: #CD2E3A;
+}
+button.btn.btn-primary.play {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    background-color: #03cce6;
+    border: none;
+}
+
+/*-- about --*/
+h3.w3_head {
+    font-weight: 400;
+    color: black;
+    font-size: 2.85em;
+    letter-spacing: 0.075em;
+    line-height: 1.35em;
+    margin-bottom: 0.5em;
+}
+p.main_p {
+    font-size: 1.5em;
+    line-height: 1.8em;
+    letter-spacing: 0.075em;
+    color: black;
+    font-weight: 300;
+}
+.about-info span {
+    color: #ffb500;
+    font-size: 2.7em;
+    width: 2.2em;
+    border-radius: 100%;
+    height: 2.2em;
+    line-height: 2.2em;
+    border: 2px dotted #CD2E3A;
+}
+.about-info-grids h4 {
+    font-size: 1.5em;
+   line-height: 1.5em;
+    letter-spacing: 0px;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 30px 0;
+}
+.about-info-grids p {
+    font-size: 17px;
+    line-height: 1.8em;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: center;
+}
+/*-- //about --*/
+/*-- news --*/
+.w3l_head {
+    padding-bottom: 2.5em;
+}
+h3.heading {
+    font-size: 2.5em;
+    color: black;
+    line-height: 1em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+	text-transform: capitalize;
+}
+
+.news p {
+    font-size: 16px;
+    line-height: 1.8em;
+    color: black;
+}
+section.news img {
+    border-radius: 5px;
+}
+p.subs span{
+    color: black;
+    font-weight: 800;
+}
+.news_btm span {
+    color: #b9bcc2;
+    font-size: 2.5em;
+}
+.news_btm h6 {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    letter-spacing: 0.04em;
+    color: white;
+	text-align:left;
+}
+.news_btm p{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.065em;
+    font-size: 1.0em;
+    color: white;
+	text-align:left;
+	margin-bottom: 5%;
+}
+.news_btm_rgt {
+    padding-left: 0;
+}
+section.news {
+    background: #CD2E3A;
+}
+/*-- //news --*/
+.w3l_head1 {
+	padding-bottom: 2em;
+	height: 50px;
+}
+.new-tp {
+    padding: 2em;
+}
+.new-tp p {
+    font-size: 16px;
+    line-height: 1.8em;
+    color: black;
+}
+h4.heading {
+    font-size: 2.5em;
+    color: #0047A0;
+    line-height: 1em;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+	text-transform: capitalize;
+	font-family: "微軟正黑體";
+}
+p.subs1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.065em;
+    font-size:0.9em;
+    color: black;
+}
+.agile-link-bnr1 {
+    padding: 12px 26px;
+    color: #fff;
+    background: #36b1af;
+    font-size: 1em;
+    letter-spacing: 0.075em;
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 0em;
+    border: 1px solid #36b1af;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.agile-link-bnr1:hover {
+    background: #fd5c63;
+	border:1px solid #fd5c63;
+}
+.new-tp span {
+    background: #fff;
+    color: #36b1af;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+}
+/*-- blog --*/
+h4.heading span{
+	color:#b9bcc2;
+}
+section.blog_w3l {
+	background: #0047A0;
+	font-family: "微軟正黑體";
+	text-align: center;
+}
+section.blog_w3l h5{
+	display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.065em;
+    font-size: 1.1em;
+    color: white;
+	margin: 0 0 0.25em 0;
+	font-family: "微軟正黑體";
+}
+section.blog_w3l h3 {
+    text-transform: capitalize;
+    letter-spacing: 0.01em;
+    color: white;
+	font-size: 1.35em;
+	font-family: "微軟正黑體";
+	font-weight: bold;
+	text-decoration: underline;
+}
+section.blog_w3l h3 a{
+	color: white;
+	font-family: "微軟正黑體";
+	font-weight: bold;
+	text-decoration: underline;
+}
+section.blog_w3l img {
+       border-radius: 50px;
+}
+section.blog_w3l p {
+    font-size: 16px;
+    line-height: 1.8em;
+    color: white;
+}
+.blog_w3l_left1 {
+    border-bottom: solid 1px #dbdbdb;
+    margin: 0 0 2.75em 0;
+    padding: 0 0 2.75em 0;
+}
+.blog_w3l-1 {
+    padding-left: 0;
+}
+/*-- //blog --*/
+p.subs {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.065em;
+    font-size:1em;
+    color: black;
+    width: 86%;
+}
+/*-- foot-1 --*/
+section.foot-1 {
+	background: #2d2f35;
+}
+.foot-1 h4 {
+    font-size: 1.3em;
+    color: #fff;
+	font-weight: 800;
+    letter-spacing: 0.04em;
+	line-height:1em;
+	text-transform: uppercase;
+}
+.foot-top li {
+    display: block;
+    border-bottom:1px solid rgba(172, 178, 191, 0.37);
+	padding: 1em 0;
+}
+.foot-top li:last-child{
+	border-bottom: none;
+}
+.foot-top p {
+    color: #acb2bf;
+    line-height: 1.8em;
+	font-size: 16px;
+}
+.foot-top p a {
+	color: #acb2bf;
+}
+section.foot-1 p span {
+    font-size: 15px;
+    font-weight: 700;
+	color: #fff;
+	letter-spacing: 0.065em;
+}
+.foot-top li a{
+	color: #acb2bf;
+}
+/*-- //foot-1 --*/
+
+.foot_bottom{
+	background-color: #CD2E3A;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.cpy-right {
+    padding: 3em 0;
+    margin: 0em 0 0;
+	border-top: 1px solid white;
+}
+.cpy-right p {
+    color: white;
+    letter-spacing: 2px;
+}
+.cpy-right p a {
+    color: white;
+}
+.cpy-right p a:hover{
+	color:#999;
+}
+#success-message {
+	opacity: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12 {
+	padding: 0 20% 0 20%;
+}
+
+textarea {
+	resize: none;
+}
+
+.btn-mod.btn-large {
+	height: auto;
+	padding: 13px 52px;
+	font-size: 15px;
+}
+
+.btn-mod.btn-border {
+	color: #000000;
+	border: 1px solid #000000;
+	background: transparent;
+}
+
+.btn-mod,
+a.btn-mod {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 4px 13px;
+	color: #fff;
+	background: rgba(34, 34, 34, .9);
+	border: 1px solid transparent;
+	font-size: 11px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+	-moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+	-o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+	-ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+	transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+.btn-mod.btn-border:hover,
+.btn-mod.btn-border:active,
+.btn-mod.btn-border:focus,
+.btn-mod.btn-border:active:focus {
+	color: #fff;
+	border-color: #000;
+	background: #000;
+	outline: none;
+}
+
+@media only screen and (max-width: 500px) {
+	.btn-mod.btn-large {
+		padding: 6px 16px;
+		font-size: 11px;
+	}
+	.form-title {
+		font-size: 20px;
+	}
+}
+
+form#contact-form label {
+	color: #ea4335;
+}
+
+label {
+	color: #000 !important;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+
+.form-control {
+	background-color: #e2e2e2;
+	border: none;
+}
+ul.social_section_1info li {
+    display: inline-block;
+}
+ul.social_section_1info a {
+    color: #999;
+    margin-right: 30px;
+    font-size: 25px;
+}
+ul.social_section_1info a:hover {
+    color: #fff;
+}
+
+/* //contact */
+.row.blog_w3l_left2{
+	margin:0;
+}
+/*-- Responsive design --*/
+
+@media screen and (max-width: 1366px) {
+	.banner,.banner-layer {
+		min-height: 700px;
+	}
+	.agile_banner_info {
+		padding: 39em 0em 0em;
+	}
+}
+@media screen and (max-width: 1080px) {
+	.team-info {
+		padding: 1.5em 1em;
+		padding-left: 2em;
+	}
+	#typed {
+		font-size: 3em !important;
+	}
+	.agile_banner_info a {
+    padding: 12px 20px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.banner, .banner-layer {
+		min-height: 600px;
+	}
+	.agile_banner_info {
+		padding: 33em 0em 0em;
+	}
+	.copyleft p {
+		letter-spacing: .5px;
+		font-size: 14.5px !important;
+	}
+}
+@media screen and (max-width: 991px) {
+	.navbar-light .navbar-toggler {
+		border-color: #fd5c63;
+		border-radius: 0;
+		background: #fd5c63;
+	}
+	.navbar-collapse {
+		background: rgba(0,0,0,0.7);
+		padding: 2em 0;
+	}
+	.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+		color: #fd5c63;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		display: inline-block;
+	}
+	.dropdown-menu {
+		min-width: auto;
+		padding: 0;
+		margin: 0;
+		background-color: transparent;
+		border: none;
+		border-radius: 0;
+		text-align: center;
+	}
+	.navbar-light .navbar-nav .dropdown-menu a.nav-link {
+		color: #fff;
+		padding-left: 0em;
+	}
+	.serv-icons span {
+		font-size: 45px !important;
+	}
+	.serv-grids:after {
+		top: 6%;
+	}
+	.serv-grids {
+		padding: 0em 1em;
+	}
+	.read {
+		width: 33%;
+	}
+	.serv-grids a {
+		margin-top: 0em;
+	}
+	.w3l-info1 p {
+		letter-spacing: .5px;
+	}
+	.agileinfo_stats_grid {
+		width: 145px;
+		height: 145px;
+		padding: 1em 0;
+	}
+	.copyleft, .copyright {
+		text-align: center;
+	}
+	.navbar {
+		padding: 0;
+	}
+ h3.heading {
+		font-size: 2em !important;
+	}
+	.agile_banner_info1 h2 {
+    font-size: 1.5em !important;
+}
+.banner_agile_para p {
+    font-size: 1.2em !important;
+}
+.ban-buton {
+    text-align: right;
+    margin-top: 1em;
+}
+.banner, .banner-layer {
+    min-height: 590px;
+}
+p.subs {
+    width: 100%;
+}
+h4.heading {
+    font-size: 2em !important;
+    line-height: 1.4em;
+}
+.new-tp {
+    padding: 1em;
+}
+.blog_w3l_right {
+    margin-top: 3em;
+}
+.foot-1_grid_right {
+    margin-top: 2em;
+}
+section.blog_w3l h3 {
+    font-size: 1.2em !important;
+}
+.foot-1 h4 {
+    font-size: 1.2em !important;
+}
+.banner1 {
+    min-height: 240px;
+}
+h2.tittle {
+    font-size: 1.8em !important;
+}
+.cpy-right p {
+    margin-top: 1em;
+}
+.ban-buton {
+    text-align: center;
+    margin-top: 1em;
+}
+}
+@media screen and (max-width: 800px) {
+	#typed {
+		font-size: 2.7em !important;
+	}
+}
+@media screen and (max-width: 768px) {
+.agile_banner_info {
+    padding: 26em 0em 0em;
+}
+.banner, .banner-layer {
+    min-height: 556px;
+}
+}
+@media screen and (max-width: 736px) {
+	.banner_agile_para {
+		margin-right: 0em;
+	}
+	.banner_agile_para p {
+		font-size: 15px !important;
+	}
+	.read {
+		width: 42%;
+	}
+	.testimonials-grid-1 {
+		width: 50%;
+		margin: auto;
+	}
+	.testimonials h4 {
+		font-size: 20px !important;
+		letter-spacing: 1px;
+	}
+	.testimonials h5 {
+		font-size: 15px !important;
+	}
+	.agileinfo_stats.mid-w3l-stat.hide_dot:after {
+		background: none;
+	}
+.agile_banner_info {
+    padding: 24em 0em 0em;
+}
+.about-info.about-info2 {
+    margin: 2em 0;
+}
+.agile_banner_info1 h2 {
+    font-size: 1.3em !important;
+}
+.banner, .banner-layer {
+    min-height: 520px;
+}
+.tech-btm h5 {
+    margin-top: 1em;
+}
+.blog_w3l-2 {
+    padding: 1em 0;
+}
+.banner_agile_para h2 {
+    font-size: 1.3em !important;
+}
+.row.blog_w3l_left2 {
+    margin: 0;
+}
+}
+@media screen and (max-width: 667px) {
+	.navbar-brand {
+		font-size: .9em !important;
+	}
+	.banner, .banner-layer {
+		min-height: 534px;
+	}
+	.agile_banner_info {
+		padding: 25em 0em 0em;
+	}
+	h2.heading, h3.heading {
+		font-size: 28px !important;
+	}
+	.banner1 {
+    min-height: 220px;
+}
+}
+@media screen and (max-width: 568px) {
+	#typed {
+		font-size: 2.5em !important;
+	}
+	.serv-grids h4 {
+		font-size: 23px !important;
+	}
+	.agileinfo_foot-1_grid h2 a {
+		margin-top: 0em;
+		margin-bottom: 1em;
+	}
+	.team-grids,.pricing-layer {
+		padding: 0 5em;
+	}
+	.foot-1_grid_middle {
+    margin-top: 2em;
+}
+.banner, .banner-layer {
+    min-height: 450px;
+}
+.agile_banner_info {
+    padding: 20em 0em 0em;
+}
+}
+@media screen and (max-width: 480px) {
+	#typed {
+		font-size: 2.2em !important;
+	}
+	.banner_agile_para p {
+		font-size: 14px !important;
+		line-height: 1.8em;
+	}
+	h2.heading, h3.heading {
+    font-size: 1.7em !important;
+}
+p.subs {
+    font-size: 0.9em !important;
+}
+h4.heading {
+    font-size: 1.7em !important;
+}
+section.blog_w3l h3 {
+    font-size: 1.3em !important;
+}
+.foot-1 h4 {
+    font-size: 1.1em !important;
+}
+.news_btm h6 {
+    font-size: 1.1em !important;
+	font-weight: bold !important;
+}
+.banner_agile_para h2 {
+    font-size: 1.1em !important;
+}
+.banner, .banner-layer {
+    min-height: 446px;
+}
+}
+@media screen and (max-width: 440px) {
+.agile_banner_info1 h2 {
+    font-size: 1.2em !important;
+}
+.banner, .banner-layer {
+    min-height: 470px;
+}
+.banner1 {
+    min-height: 200px;
+}
+}
+@media screen and (max-width: 414px) {
+	.navbar-brand {
+		font-size: .8em !important;
+	}
+	#typed {
+		font-size: 1.8em !important;
+	}
+	.navbar-toggler {
+		font-size: 1rem !important;
+	}
+	.serv-icons {
+		width: 100%;
+	}
+	.serv-grids p {
+		font-size: 14px !important;
+		margin: 1em 0em;
+	}
+	.serv-grids h4 {
+		font-size: 22px !important;
+		letter-spacing: 1px;
+	}
+	.read {
+		width: 62%;
+	}
+	.team-grids, .pricing-layer {
+		padding: 0 2em;
+	}
+	.ban-buton {
+    margin-top: 1em;
+}
+nav.mnu {
+    padding: 1em 1em;
+}
+.agile_banner_info {
+    padding: 15em 0em 0em;
+}
+.agile_banner_info1 h2 {
+    font-size: 1.1em !important;
+}
+.agile_banner_info a {
+    font-size: 1em !important; 
+}
+.banner, .banner-layer {
+    min-height: 400px;
+}
+}
+@media screen and (max-width: 384px) {
+	.team-grids, .pricing-layer {
+		padding: 0 0em;
+	}
+	.agile_banner_info {
+		padding: 14em 0em 0em;
+	}
+	.banner, .banner-layer {
+		min-height: 385px;
+	}
+	.banner1 {
+    min-height: 180px;
+}
+}
+@media screen and (max-width: 375px) {
+	.welcome_left h3 {
+		font-size: 23px !important;
+		letter-spacing: 0px;
+	}
+	.welcome_left h4 {
+		letter-spacing: 3px;
+	}
+	.about-grids h3 {
+		font-size: 16px !important;
+	}
+	a.contact {
+		font-size: 13px !important;
+	}
+}
+@media screen and (max-width: 320px) {
+	.agileinfo_stats_grid {
+		width: 125px;
+		height: 125px;
+	}
+	p.counter {
+		font-size: 2.2em !important;
+	}
+	.agileinfo_stats_grid {
+		box-shadow: 5px 5px #fff;
+		-webkit-box-shadow: 5px 5px #fff;
+		-o-box-shadow: 5px 5px #fff;
+		-moz-box-shadow: 5px 5px #fff;
+		-ms-box-shadow: 5px 5px #fff;
+	}
+	#typed {
+		font-size: 1.5em !important;
+	}
+	p.heading-bottom {
+		letter-spacing: 1px;
+		font-size: 14px !important;
+	}
+	.grid_info h3 {
+		font-size: 20px !important;
+	}
+	.read {
+		width: 75%;
+	}
+	.foot-top p {
+    font-size: 15px !important;
+}
+section.blog_w3l p {
+    font-size: 15px !important;
+}
+.blog_w3l_left1, .blog_w3l_left2 {
+    margin: 0 0 1.75em 0;
+    padding: 0 0 1.75em 0;
+}
+.new-tp p {
+    font-size: 15px !important;
+}
+.news_btm h6 {
+    font-size: 1em !important;
+	font-weight: bold !important;
+}
+.news p {
+    font-size: 15px !important;
+}
+.agile_banner_info1 h2 {
+    margin: 0 0 1em 0;
+    padding:1em 0;
+}
+.logo h1 a {
+    font-size: 28px !important;
+}
+.agile_banner_info {
+    padding: 15em 0em 0em;
+}
+.banner, .banner-layer {
+    min-height: 387px;
+}
+.blog-grid-top p, .two-blog2 p {
+    font-size: 15px !important;
+}
+.blog-grid-top h3, .two-blog2 h3, h5.card-title {
+    font-size: 1em !important;
+}
+.tech-btm h4 {
+    font-size: 1.1em !important;
+}
+.banner1 {
+    min-height: 150px;
+}
+h2.tittle {
+    font-size: 1.5em !important;
+}
+nav.mnu {
+    padding: 1em 0em;
+}
+.agile_banner_info a {
+    padding: 8px 20px;
+}
+.banner_agile_para h2 {
+    font-size: 1em !important;
+}
+p.subs1,p.subs {
+    font-size: 0.85em !important;
+}
+.about-info-grids h4 {
+    font-size: 1.4em !important;
+    margin: 16px 0;
+}
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  background: black;
+  color: #fff;
+  padding: 10px 15px;
+  display: none;
+  transition: .5s;
+  font-size: 20px;
+}
+
+#back-to-top:focus, #back-to-top:hover {
+  color: #fff;
+  text-decoration: none;
+  background: #CD2E3A;
+}
+/* info Section */
+	#services {
+      padding: 30px 0;
+      background: #0047A0;
+    }
+    #services .service-media {
+      margin: 10px;
+    }
+    #services .service-media img {
+      position: relative;
+      width: 225px;
+      height: 225px;
+      border-radius: 50%;
+      border: 10px solid rgba(255, 255, 255, 0.1);
+    }
+    #services .service-desc {
+      margin: 10px 10px 40px;
+      text-align: center;
+    }
+    #services h2 {
+      color: #fff;
+    }
+    #services h3 {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 400;
+      padding: 5px 0;
+	}
+    #services p {
+      color: rgba(255, 255, 255, 0.9);
+    }
+    #services hr {
+      background: rgba(255, 255, 255, 0.6);
+	}
+	.w3l_head {
+    padding-bottom: 2.5em;
+}
+h3.heading {
+    font-size: 2.5em;
+    color: white;
+    line-height: 1em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+}
+
+.weather p {
+    font-size: 16px;
+    line-height: 1.8em;
+    color: #777;
+}
+section.weather img {
+    border-radius: 5px;
+}
+p.subs span{
+    color: black;
+    font-weight: 800;
+}
+.weather_btm span {
+    color: #b9bcc2;
+    font-size: 2.5em;
+}
+.weather_btm h6 {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color: #404248;
+	text-align:left;
+}
+.weather_btm p{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.065em;
+    font-size: 0.9em;
+    color: #696969;
+	text-align:left;
+}
+.news_btm_rgt {
+    padding-left: 0;
+}
+section.weather {
+    background: #efefef;
+}
+/*-- //news --*/
+.w3l_head1 {
+    padding-bottom: 2em;
+}
+.new-tp {
+    padding: 2em;
+}
+.new-tp p {
+    font-size: 16px;
+    line-height: 1.8em;
+    color: white;
+}
+h4.heading {
+    font-size: 2.5em;
+    color: white;
+    line-height: 1em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+}
+p.subs1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.065em;
+    font-size:0.9em;
+    color: white;
+}
+.agile-link-bnr1 {
+    padding: 12px 26px;
+    color: #fff;
+    background: #36b1af;
+    font-size: 1em;
+    letter-spacing: 0.075em;
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 0em;
+    border: 1px solid #36b1af;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.agile-link-bnr1:hover {
+    background: #fd5c63;
+	border:1px solid #fd5c63;
+}
+.new-tp span {
+    background: #fff;
+    color: #36b1af;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+#circle-shape-example { 
+  font-family: Open Sans, sans-serif; 
+  margin: 2rem; 
+}
+#circle-shape-example p { 
+  line-height: 1.8; 
+}
+#circle-shape-example .curve { 
+  width: 33%; height: auto;
+  min-width: 150px;
+  float: left;
+  margin-right:2rem; 
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
+.img {
+	width: 350px;
+	height: 300px;
+}
+	</style>
+</head>
+<body>
+<header>	
+	<nav class="mnu">
+		<div class="container">
+            <div class="logo" id="logo">
+                <h1><a href="">韩国欢迎您！</a></h1>
+            </div>
+				<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+                <input type="checkbox" id="drop">
+                    <ul class="menu mt-1">
+						<li class="mr-lg-4 mr-3"><a href="index.html"><h5>回到首页</h5></a></li>
+						<li class="mr-lg-4 mr-3"><a href="#about" class="scroll"><h5>关于韩国</h5></a></li>
+                        <li class="mr-lg-4 mr-3"><a href="#attractions" class="scroll"><h5>景点介绍</h5></a></li>
+						<li class="mr-lg-4 mr-3"><a href="#info" class="scroll"><h5>韩国资料</h5></a></li>
+						<li class="mr-lg-4 mr-3"><a href="#weather" class="scroll"><h5>韩国气象</h5></a></li>
+						<li class="mr-lg-4 mr-3"><a href="#language" class="scroll"><h5>韩文简介</h5></a></li>
+                    </ul>
+		</div>
+    </nav>
+</header>
+<!-- banner -->
+<div class="banner">
+	<div class="agile_banner_info">
+		<div class="row banner_agile_para">
+			<div class="col-lg-9 ban-text">
+				<h2>韩国是一个有运动员精神的国家、科技发达，并且充满活力的国家，更充满了丰富的历史、优美的文化，环境干净又亮点，总是让人赞叹不已。</h2>
+			</div>
+		</div>
+	</div>
+</div>
+<section class="wedo py-5" id="about">
+	<div class="container py-lg-5">
+		<div class="w3l_head1">
+			<h4 class="heading text-center"><u>关于韩国 한국에 대해서</u></h3>
+		</div>
+		<div class="row about-info-grids text-center py-lg-5 py-3 mt-3">
+			<div class="col-md-4 about-info about-info1">
+				<span class="fa fa-plane"></span>
+				<h4>历史 역사</h4>
+				<p><b>韩国的历史，经过人类历学研究发现，早在 70 万年前，朝鲜半岛就有人类居住。这时期叫做史前时代。根据传说，神话人物檀君于公元前 2333 年建立了韩国第一个王国~古朝鲜。之后，有几个部族由满州南部地区移到朝鲜半岛。这时期叫做古朝鲜。朝鲜王朝建立于 14 世纪末期，儒教成为国教，对于整个社会产生了重大的影响力。西元 1443 年发明了韩文字母。由于日本的侵略 (西元 1592 年，任辰倭乱) 和外国势力的侵略使朝鲜开始走向衰退。西元 2000 年历史性的南北韩首脑会谈在北韩的首都平壤召开。朝韩分治后，韩国经历了民主与独裁统治的反复交替。</b></p>
+			</div>
+			<div class="col-md-4 about-info about-info2">
+				<span class="fa fa-map"></span>
+				<h4>文化 문화</h4>
+				<p><b>朝鲜战争后朝鲜半岛的南北对峙导致了南北朝鲜现代社会化的差异，但双方传统文化却一脉相承。韩国现代社会文化由朝鲜民族传统文化与现代社会流行文化相结合衍生而来，1948 年朝鲜半岛南北对峙以来，南北韩的现代文化出现不同的发展。韩国现代社会文化是朝鲜民族文化现代化的产物。随着韩国经济和社会的发展，韩国人的衣食住行等生活方式也发生了变化，从而构筑了韩国现代文化。韩国文化在亚洲和世界的流行被称为韩流。</b></p>
+			</div>
+			<div class="col-md-4 about-info about-info3">
+				<span class="fa fa-envelope"></span>
+				<h4>经济 경제</h4>
+				<p><b>大韩民国的经济是世界主要经济体之一，经济合作与发展组织（OECD）成员，亚洲四小龙之一。韩国同时也是未来 11 国中唯一一个发达国。据世界银行的统计，韩国 2014 年国内生产总值按国际汇率和相对购买力指标计算在世界排名皆位居第 13 位。韩国是世界第 6 大出口国和第 9 大进口国。截至 2015 年 3 月，韩国已与包括美国、欧盟、中国在内的 52 个国家签订了 14 个自由贸易协定，其「经济领土」规模达世界 GDP 的 73.5%. 自 20 世纪 60 年代，韩国根据本国比较优势，积极参与国际分工，使经济发展进入了快速发展的轨道。</b></p>
+			</div>
+	</div>
+</div>
+</section>
+	<section class="news py-5" id="attractions">
+		<div class="container py-lg-5">
+			<div class="w3l_head">
+				<h3 class="heading text-center"><u>景点介绍 관광 명소 소개</u></h3>
+			</div>		
+				<div class="row news-grids py-lg-5 py-3 mt-3 text-center">
+						<div class="col-md-4 newsgrid1">
+							<img src="https://blog.airpaz.com/wp-content/uploads/Bukchon-hanok-village.jpg" alt="news image" class="img-fluid">
+							<div class="news_btm mt-4">
+								<h6><b><center><u>北村韩屋村</b></u></center></h6>
+								<p>从以前开始，北村韩屋村是众所皆知的两班贵族居住的地方，这里的住宅是朝鲜时代的瓦屋。一直到今天，还是全部保留过去上流阶层的建筑形式，有大宫阙之间的传统式的韩屋的建筑。游客可欣赏有 600 年历史都市的迷人风景。</p>
+							</div>
+						</div>
+						<div class="col-md-4 mt-md-0 mt-5 newsgrid2">
+							<img src="https://blog.airpaz.com/wp-content/uploads/Gyeongbokgung-korea-1.jpg" alt="news image" class="img-fluid">
+							<div class="news_btm mt-4">
+								<h6><b><center><u>景福宫</b></u></center></h6>
+								<p>景福宫是太祖李成桂于西元 1395 年下令新建的朝鲜王朝法宫，和东阙 (昌德宫)、西阙 (庆熙宫) 相较之下位置较北，所以，又被称为「北阙」。景福宫 (史迹第 117 号) 是五大宫阙中，规模最大。最美丽的宫阙的建筑设计。</p>
+							</div>
+						</div>
+						<div class="col-md-4  mt-md-0 mt-5 newsgrid3">
+							<img src="https://blog.hotelscombined.com.tw/wp-content/uploads/2018/08/open%E7%94%A8%EF%BC%88iStock-931352874%EF%BC%89.jpg" alt="news image" class="img-fluid">
+							<div class="news_btm mt-4">
+								<h6><b><center><u>宏大街道</b></u></center></h6>
+								<p>大韩民国的年轻族羣的街头文化象征，主要以弘益大学为中心点。街道上聚焦着反映最新潮流的餐厅、咖啡馆、夜店、和服饰店。游客也可以参观宏益大学。街道不时会有人唱歌，等，吸引许多的人。</p>
+							</div>
+						</div>
+						<p></p>
+						<div class="col-md-4  mt-md-0 mt-5 newsgrid3">
+							<img src="https://pic.pimg.tw/polong/1439223747-1551086140_n.jpg" alt="news image" class="img-fluid">
+							<div class="news_btm mt-4">
+								<h6><b><center><u>青瓦台</b></u></center></h6>
+								<p>青瓦台是大韩民国总统的官邸。主要由本馆、迎宾馆、春秋馆、绿地园、无穷花花园、七宫等建筑物所组成。大韩民国总统府精神的本馆屋顶，使用了共约 15 万块青瓦所筑成，和曲线条屋顶相映成趣，为要呈现出国家的美丽，使青瓦台得名。</p>
+							</div>
+						</div>
+						<p></p>
+						<div class="col-md-4  mt-md-0 mt-5 newsgrid3">
+							<img src="https://www.hanchao.com/varimg/photogallery/Now_Seoul/5706/big_117534.jpg" alt="news image" class="img-fluid">
+							<div class="news_btm mt-4">
+								<h6><b><center><u>大韩民国历史博物馆</b></u></center></h6>
+								<p>大韩民国历史博物馆于 2012/12/26 开幕。它纪录来自 19 世纪末被迫贸易通商的开港期到如今。大韩民国如何成立，持续发展的足迹。博物馆设立宗旨，在透过展览、教育、调查研究与资料收集，为了与国民共享在苦难与逆境中成长的大韩民国的历史。</p>
+							</div>
+						</div>
+						<p></p>
+						<div class="col-md-4  mt-md-0 mt-5 newsgrid3">
+							<img src="https://www.airlinequality.com/wp-content/uploads/2018/10/Seoul-Incheon-Airport-Terminal-1-landside-Sept-2018.jpg" alt="news image" class="img-fluid">
+							<div class="news_btm mt-4">
+								<h6><b><center><u>首尔仁川国际机场</b></u></center></h6>
+								<p>首尔仁川国际机场于 2001/3/29 正式开幕。仁川机场的第二航厦于 2018/1/18 正式启用，为了纾减第一航厦壅挤的人潮。第二航厦的整体建筑非常夺目，也可看到许多绿色的植物。第二航厦有室内花园、洗衣店、传统韩国体验中心、机器人，等。来第二航厦就要到韩式料理美食街用餐。</p>
+							</div>
+						</div>
+
+						<p></p>
+						<div class="col-md-4  mt-md-0 mt-5 newsgrid3">
+							<img src="http://tourpangkorea.com/design/upload_file/BD1003/f5c38ed6e1b36b0e4022413b12a004c7_20684_6.jpg" alt="news image" class="img-fluid">
+							<div class="news_btm mt-4">
+								<h6><b><center><u>汝矣岛汉江公园</b></u></center></h6>
+								<p>汝矣岛汉江公园集结政治、金融、媒体的重心－汝矣岛之上。方便的大众运输，如，地铁、公车等，成为上班族和首尔市民时常前往的地方。汝矣岛汉江公园春天不只可以欣赏樱花，秋天也有世界烟火节之外，还有马拉松大会等多种活动，乃拥有丰富活动与景点的公众休息活动空间。</p>
+							</div>
+						</div>
+
+						<p></p>
+						<div class="col-md-4  mt-md-0 mt-5 newsgrid3">
+							<img src="https://photos.wikimapia.org/p/00/04/06/85/12_big.jpg" alt="news image" class="img-fluid">
+							<div class="news_btm mt-4">
+								<h6><b><center><u>东大门设计广场</b></u></center></h6>
+								<p>东大门设计广场 (DDP) 位置于东大门历史文化公园地铁站的复合文化空间，它名字拼成 Dream, Design, Play. 这里有蛮多的展览、服装秀、研讨会、会议等还外国内的重要活动的举办地。同时，也带动新品问世与时尚趋势。</p>
+							</div>
+						</div>
+
+						<p></p>
+						<div class="col-md-4  mt-md-0 mt-5 newsgrid3">
+							<img src="http://www.yingshiyou.com/uploads/allimg/140609/1-140609231956128.jpg" alt="news image" class="img-fluid">
+							<div class="news_btm mt-4">
+								<h6><b><center><u>韩国民俗村</b></u></center></h6>
+								<p>韩国民俗村与首尔南方的距离约 41 公里，在京釜高速公路水原 I.C 往东南方 3 公里处。村内保存了民族文化资源，且作为延续后代更加解固有场所可以学习文化的教育，以及专为着海内和海外游客介绍韩国传统文化而建立的。本村于 1973 年正式破土，隔年竣工落成。</p>
+							</div>
+						</div>
+
+						<p></p>
+						<div class="col-md-4  mt-md-0 mt-5 newsgrid3">
+							<img src="https://tw.bring-you.info/imgs/2018/11/seoul-travel-39-900x600.jpg" alt="news image" class="img-fluid">
+							<div class="news_btm mt-4">
+								<h6><b><center><u>南山首尔塔</b></u></center></h6>
+								<p>首尔塔为韩国第一个高塔型的观光景点。高为 236.7m 的塔，海拔为 243m 的南山上，再加上高度 480m. 成为东南亚最高的塔。1980/10/15 正式对外开放首尔景观台。也因此，成为首尔著名的观光景点，也受游客的喜爱。2005/12/9 再度重新翻修，变为华丽耀眼的南山首尔塔。</p>
+							</div>
+						</div>
+
+						<p></p>
+						<div class="col-md-4  mt-md-0 mt-5 newsgrid3">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Korea-Gyeonghuigung-01.jpg" alt="news image" class="img-fluid">
+							<div class="news_btm mt-4">
+								<h6><b><center><u>庆熙宫</b></u></center></h6>
+								<p>庆熙宫庆熙宫又叫作西门内宫阙，或是西边的宫阙，也被称为西阙。它一直做为王族的私宅，直到光海君 1616 年，传闻西门内的位置具有王气，是为压制其王气。另外建了离宫，名字为敬德宫。但，因仁祖反正 (朝臣拥戴新君主即位) 后光海君被废，1760 年时，将敬德宫改名为庆熙宫。</p>
+							</div>
+						</div>
+						
+						<p></p>
+						<div class="col-md-4  mt-md-0 mt-5 newsgrid3">
+							<img src="https://dimg04.c-ctrip.com/images/100t0e000000709hyB14A.jpg?proc=source%2Ftrip" alt="news image" class="img-fluid">
+							<div class="news_btm mt-4">
+								<h6><b><center><u>松岛天空步道</b></u></center></h6>
+								<p>因为釜山靠近海边，所以，釜山自然会有许多地美丽的海边景点可以放进行程里。比较知名的叁个大海水浴场莫过于就是：海云台海水浴场、广安里海水浴场、跟松岛海水浴场，也是来到釜山一定要访的地方。因为距离和交通的关系，因此，建议大家可以把这两个景点放在同一天玩。</p>
+							</div>
+						</div>
+
+						<p></p>
+						<div class="col-md-4  mt-md-0 mt-5 newsgrid3">
+							<img src="http://img.ya7.tw/uploads/20171219010819_8.jpg" alt="news image" class="img-fluid">
+							<div class="news_btm mt-4">
+								<h6><b><center><u>五六岛海上天空步道</b></u></center></h6>
+								<p>五六岛 Skywalk 一带曾经名字叫 seungdumal, 原本因形如马鞍被称为 seungdumal, 汉字拼音接近「乘头马」。之后，末字发音的因素，才变成韩文的 mal. 当地的海女和居民都把这里称为 challokkae, 韩文的意思瘸脚。来釜山玩，是一个不能错过的景点之一。</p>
+							</div>
+						</div>
+
+						<p></p>
+						<div class="col-md-4  mt-md-0 mt-5 newsgrid3">
+							<img src="http://www.wrtimes.co.kr/data/cheditor4/1605/2038915042_dnM2jhkB_ECB695ECA09CEB82A0_EAB3A8EBAAA9ECB695ECA09C_ECB59CEB8C80EC9D98_ED8FACED86A0ECA1B4.jpg" alt="news image" class="img-fluid">
+							<div class="news_btm mt-4">
+								<h6><b><center><u>甘川洞文化村</b></u></center></h6>
+								<p>甘川文化村的位置是在山的脚下，呈阶梯式聚集在一起的房子以巷弄为中心点所形成的漂亮村落，被大家称为釜山的马丘比丘。在这村里，游客能看得到各式各样的主题小房子，和巷弄内的早型摆设，凸显出村民的创意。</p>
+							</div>
+						</div>
+
+						<p></p>
+						<div class="col-md-4  mt-md-0 mt-5 newsgrid3">
+							<img src="https://m.visitkorea.or.kr/image/view/44/1933044_image2_1.jpg" alt="news image" class="img-fluid">
+							<div class="news_btm mt-4">
+								<h6><b><center><u>松月洞童话村</b></u></center></h6>
+								<p>松月洞童话村位于仁川市的中国城附近，且利用花朵和大家所熟悉的童话故事为主题，为了打造童心未泯的童话村。色彩缤纷的墙壁画上，可以看到小红帽、小木偶、白雪公主等童话故事的主角。虽然它是墙壁画，但是增加了 3D 元素立体的呈现，让来到这里的游客可以多多地投入在这个童话王国的气氛的当中。</p>
+							</div>
+						</div>
+				</div>
+	</section>
+<!-- //news -->
+<!-- news-bottom -->
+<section class="news-bottom py-5">
+	<div class="container py-lg-5">
+		<div class="newsgrid1 text-center">
+			<div class="w3l_head1">
+				<div class="img"><img src="images/koreanair.png" alt="大韩航空"></div>
+			</div>
+		
+	</div>
+</section>
+<!-- //transportation-bottom -->
+<!-- blog -->	
+<section class="blog_w3l py-5" id="info">
+	<div class="container py-lg-5">
+			<div class="w3l_head">
+				<h4 class="heading text-center"><u>韩国资料 한국에 관한 정보</u></h4>
+			</div>
+
+			<div id="services">
+				<div class="container">
+				  <div class="col-md-10 col-md-offset-1 section-title text-center">
+				  </div>
+				  <div class="row">
+					<div class="col-md-3 text-center">
+					  <div class="service-media">
+						<img src="https://www.nationsonline.org/gallery/Korea_South/Seoraksan-Inje-gun-South-Korea.jpg" alt=" ">
+					  </div>
+					  <div class="service-desc">
+						<h4 style="color:white"><u>国名 나라 이름</u></h4>
+						<h5 style="color:white">大韩民国</h5>
+					  </div>
+					</div>
+					<div class="col-md-3 text-center">
+					  <div class="service-media"> <img
+						  src="https://sa.kapamilya.com/absnews/abscbnnews/media/2017/overseas/03/21/south-korea-flag-032117.jpg"
+						  alt=" "> </div>
+					  <div class="service-desc">
+						<h4 style="color:white"><u>国旗 국기</u></h4>
+						<h5 style="color:white">太极旗</h5>
+					  </div>
+					</div>
+					<div class="col-md-3 text-center">
+					  <div class="service-media"> <img src="http://image.ohmynews.com/down/images/1/todd_206624_1[274229].gif"
+						  alt=" "> </div>
+					  <div class="service-desc">
+						<h4 style="color:white"><u>国歌 국가</u></h4>
+						<h5 style="color:white">爱国歌</h5>
+					  </div>
+					</div>
+					<div class="col-md-3 text-center">
+					  <div class="service-media"> <img src="http://tong.visitkorea.or.kr/img/vk/cht/page/img_6_1_4.jpg" alt=" ">
+					  </div>
+					  <div class="service-desc">
+						<h4 style="color:white"><u>国花 국화</u></h4>
+						<h5 style="color:white">无穷花</h5>
+					  </div>
+					</div>
+					<div class="col-md-3 text-center">
+					  <div class="service-media"> <img
+						  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLaNmAHkDtOSVC_dZ_yU-EebODN0JVYqVNUiNSyZaNiNqJxdf3"
+						  alt=" "> </div>
+					  <div class="service-desc">
+						<h4 style="color:white"><u>人口 인구</u></h4>
+						<h5 style="color:white">51,279,478 (2019)</h5>
+					  </div>
+					</div>
+					<div class="col-md-3 text-center">
+					  <div class="service-media"> <img src="images/seoul.jpg" alt=" "> </div>
+					  <div class="service-desc">
+						<h4 style="color:white"><u>首都 자본</u></h4>
+						<h5 style="color:white">首尔 10,054,979 (2019)</h5>
+					  </div>
+					</div>
+					<div class="col-md-3 text-center">
+					  <div class="service-media"> <img
+						  src="https://media.cntraveler.com/photos/5a7235f9ee3bb7795af31910/4:3/w_480,c_limit/Skyline-of-Busan-GettyImages-187845112.jpg"
+						  alt=" "> </div>
+					  <div class="service-desc">
+						<h4 style="color:white"><u>主要城市 주요 도시</u></h4>
+						<h5 style="color:white">首尔、釜山、仁川、</h5>
+						<h5 style="color:white">光州、大邱、大田、</h5>
+						<h5 style="color:white">庆洲、釜山</h5>
+					  </div>
+					</div>
+					<div class="col-md-3 text-center">
+					  <div class="service-media"> <img
+						  src="https://modernseoul.files.wordpress.com/2011/09/south-korea-50000-won.jpg" alt=" "> </div>
+					  <div class="service-desc">
+						<h4 style="color:white"><u>货币 통화</u></h4>
+						<h5 style="color:white">韩元、 ₩, KRW</h5>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+</section>
+<section class="blog_w3l py-5" id="weather">
+	<div class="container py-lg-5">
+			<div class="w3l_head">
+				<h4 class="heading text-center"><u>韩国气象 한국 기후</u></h4>
+			</div>
+		<div class="row blog_w3l_top py-lg-5 py-3 mt-3 ">
+			<div class="col-lg-6 blog_w3l_left">
+				<div class="row blog_w3l_left1">
+					<div class="col-md-5 blog_w3l-1">
+						<img src="images/seoulspring.jpg" alt="news image" class="img-fluid">
+					</div>
+					<div class="col-md-7 blog_w3l-2">
+						
+						<h3><b>春 봄</b></h3>
+						<p></p>
+						<h5>春季为 3 月初-5 月底</h5>
+						<p class="mt-3">日夜温差大，早晚凉，白天温暖。请记得要携带薄长袖和轻便的外套。春天也是韩国的樱花季节。</p>
+					</div>
+				</div>
+				<div class="row blog_w3l_left2">
+					<div class="col-md-5 blog_w3l-1">
+						<img src="images/koreafall.jpg" alt="news image" class="img-fluid">
+					</div>
+					<div class="col-md-7 blog_w3l-2">
+						
+						<h3>秋 가을</h3>
+						<p></p>
+						<h5>秋季为 9 月中-11 月中</h5>
+						<p class="mt-3">开始刮凉风，晴朗的天气较多，可多外出。秋季和春季一样，日夜温差大。要记得携带外套、围巾和丝巾。</p>
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-6 blog_w3l_right">
+				<div class="row blog_w3l_left1">
+					<div class="col-md-5 blog_w3l-1">
+						<img src="images/seoulsummer.jpg" alt="news image" class="img-fluid">
+					</div>
+					<div class="col-md-7 blog_w3l-2">
+						
+						<h3><b>夏 여름</b></h3>s
+						<p></p>
+						<h5>夏季为 6 月初-9 月底</h5>
+						<p class="mt-3">高温潮湿，多带凉快夏衣，并带轻便的外套，避免天气突然变化。7-8 月是梅雨季，多雨的时候。须带雨具。</p>
+					</div>
+				</div>
+				<div class="row blog_w3l_left2">
+					<div class="col-md-5 blog_w3l-1">
+						<img src="images/seoulwinter.jpg" alt="news image" class="img-fluid">
+					</div>
+					<div class="col-md-7 blog_w3l-2">
+						
+						<h3>冬 겨울</h3>
+						<p></p>
+						<h5>冬季为 11 月底-2 月底</h5>
+						<p class="mt-3">冬季的气温都在摄氏零度以下，下雪的机率比较高。要携带保暖的厚 衣物、围巾，手套，等。</p>
+					</div>
+				</div>
+				
+				</div>
+			</div>
+		</div>
+</section>
+
+<section class="wedo py-5" id="language">
+	<div class="container py-lg-5">
+		<div class="w3l_head1">
+			<h4 class="heading text-center"><u>韩文简介 한국 소개</u></h3>
+		</div>
+		<div id="circle-shape-example">
+			<img src="https://t3.ftcdn.net/jpg/02/30/75/92/500_F_230759252_fQyAdwhPbljHPKXTmwi9ZPm7aaMyHzHn.jpg" alt="韓文" class="curve"><h4 style="color:white"><center><u>韓文歷史</u></center></h4>
+		  
+			<p><h5 style="color:white">韩文通用于韩半岛和中国的东北、俄罗斯远东地区和日本等韩民族或朝鲜民族聚居地区所使用的语言。就在中国 1897 年，大韩帝国成立之前，该语言只是叫做「朝鲜语」或「朝语」。中华人民共和国于 1949 年建国之后，视同属社会主义阵营的朝鲜民主主义人民共和国为整个朝鲜半岛的唯一合法政府。所以，将中国国内和北韩半岛所有关于朝鲜族的文化和国家的字词以「朝鲜」来称呼。该语言也因而继续称为「朝鲜语」。但在 1992 年，中国与大韩民国建交之后，与大韩民国的直接文化和经济交流迅速发展，大韩民国资本大量流入中国，该语言的课本、辞典等几乎都以「韩国语」的名称发行而且内容以韩国词汇为主。因此，现在「韩语」和「韩国语」的称呼在中国更加普遍。</h5>
+		  </div>
+		  <div id="circle-shape-example">
+			<img src="https://images-na.ssl-images-amazon.com/images/I/51XMJYDwRQL.jpg" alt="韓文" class="curve"><h4 style="color:white"><center><u>韓文四十音</u></center></h4>
+		  
+			<p><h6 style="color:white">母音：ㅏ【a ㄚ】ㅑ【ya 一ㄚ】ㅓ【eo ㄛ】ㅕ【yeo 一ㄛ】ㅗ【o ㄡ】ㅛ【yo 一ㄡ】ㅜ【u ㄨ】ㅠ【yu 一ㄨ】ㅡ【eu ㄜㄨ】ㅣ【i 一】 複合母音：ㅐ【ae ㄟ】ㅒ【yae 一ㄟ】ㅔ【e ㄝ】ㅖ【ye 一ㄝ】ㅘ【wa ㄨㄚ】ㅙ【wae ㄨㄟ】ㅚ【oe ㄨㄝ】ㅝ【wo ㄨㄛ】ㅞ【we ㄨㄝ】ㅟ【wi ㄨ一】ㅢ【eui ㄜㄨ一】 子音：ㄱ【g ㄍ】ㄴ【n ㄋ】ㄷ【d ㄉ】ㄹ【l ㄌ】ㅁ【m ㄇ】ㅂ【b ㄅ】ㅅ【s ㄙ】ㅇ【不发音】ㅈ【j ㄐ】ㅊ【ch ㄑ】ㅋ【k ㄎ】ㅌ【t ㄊ】ㅍ【p ㄆ】ㅎ【h ㄏ】 双子音：ㄲ【kk ㄍˋ】ㄸ【tt ㄉˋ】ㅃ【bb ㄅˋ】ㅆ【ss ㄙˋ】ㅉ【jj ㄐ、】</h6>
+		  </div>
+		</section>
+	<div class="foot_bottom">
+		<div class="container">
+			<div class="cpy-right text-center py-5">
+				<p>© 2019 周柏如
+				</p>
+			</div>
+		</div>
+	</div>
+	 <!-- //foot-1 -->
+	 <a id="back-to-top" href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+	 <!-- ... -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+
+$(function(){
+
+	$(document).on( 'scroll', function(){
+
+		if ($(window).scrollTop() > 1800) {
+			$('.scroll-top-wrapper').addClass('show');
+		} else {
+			$('.scroll-top-wrapper').removeClass('show');
+		}
+	});
+});
+</script>
+
+<script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”></script>
+ 
+<script>
+    /*--Scroll Back to Top Button Show--*/
+
+	$(window).scroll(function () {
+      if ($(this).scrollTop() > 200) {
+        $('#back-to-top').fadeIn(1500);
+      } else {
+        $('#back-to-top').fadeOut(1500);
+      }
+    });
+    //Click event scroll to top button jquery
+    $('#back-to-top').click(function () {
+      $('html, body').animate({
+        scrollTop: 0
+      }, slow);
+      return false;
+    });
+  </script>
+</body>
+</html>
