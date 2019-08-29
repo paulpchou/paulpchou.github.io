@@ -1,125 +1,169 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>介紹韓國 intro to Korea</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>介紹韓國 Intro. to Korea</title>
+    <link rel="stylesheet" href="css/navstyle.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
-<style>
-* { box-sizing: border-box;}
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0px;
+            font-family: 'segoe ui';
+            background-image: url(img/flowers.jpg);
+	        background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+	        position:relative;
+        }
+        
+        .nav {
+            height: 50px;
+            width: 100%;
+            background-color: #CD2E3A;
+            position: relative;
+        }
+        
+        .nav>.nav-header {
+            display: inline;
+        }
+        
+        .nav>.nav-header>.nav-title {
+            display: inline-block;
+            font-size: 22px;
+            color: #fff;
+            padding: 10px 10px 10px 10px;
+        }
+        
+        .nav>.nav-btn {
+            display: none;
+        }
+        
+        .nav>.nav-links {
+            display: inline;
+            float: right;
+            font-size: 18px;
+        }
+        
+        .nav>.nav-links>a {
+            display: inline-block;
+            padding: 13px 10px 13px 10px;
+            text-decoration: none;
+            color: #efefef;
+        }
+        
+        .nav>.nav-links>a:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        
+        .nav>#nav-check {
+            display: none;
+        }
+        
+        @media (max-width:600px) {
+            .nav>.nav-btn {
+                display: inline-block;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+            }
+            .nav>.nav-btn>label {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                padding: 13px;
+            }
+            .nav>.nav-btn>label:hover,
+            .nav #nav-check:checked~.nav-btn>label {
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+            .nav>.nav-btn>label>span {
+                display: block;
+                width: 25px;
+                height: 10px;
+                border-top: 2px solid #eee;
+            }
+            .nav>.nav-links {
+                position: absolute;
+                display: block;
+                width: 100%;
+                background-color: #333;
+                height: 0px;
+                transition: all 0.3s ease-in;
+                overflow-y: hidden;
+                top: 50px;
+                left: 0px;
+            }
+            .nav>.nav-links>a {
+                display: block;
+                width: 100%;
+            }
+            .nav>#nav-check:not(:checked)~.nav-links {
+                height: 0px;
+            }
+            .nav>#nav-check:checked~.nav-links {
+                height: calc(100vh - 50px);
+                overflow-y: auto;
+            }
+        }
+        
+        * {
+            font-family: "微軟正黑體" !important;
+        }
+        
+        .nav-links {
+            font-weight: bold !important;
+        }
+        
+        .nav-title {
+            font-weight: bold !important;
+        }
+        
+        .body-text {
+            font-weight: bold !important;
+            text-align: center !important;
+            font-size: 42pt !important;
+            color: white !important;
+            margin-top: 15% !important;
+        }
+    </style>
 
-:root {
-	--light-color: #fcfffc;
-	--dark-color: #2d3a3a;
-}
-
-body {
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-  	vertical-align: baseline;
-	font-family: 'Lato', sans-serif;
-	color: var(--light-color);
-}
-.container {
-	display: flex;
-	padding: 0.3rem 0.5rem;
-}
-.header {
-	position: fixed;
-	z-index: 10;
-	width: 100%;
-	justify-content: space-between;
-	padding: 0;
-	margin: 0;
-	text-transform: uppercase;
-	font-weight: 700;
-	letter-spacing: 1px;
-	line-height: 1.5;
-}
-	.header-name {
-		text-decoration: none;
-		padding: 1rem;
-		color: inherit;
-		z-index: inherit;
-	}
-	.header a:hover {
-		opacity: 0.8;
-		transition: 0.3s;
-	}
-	.header-nav {
-    align-items: center;
-    font-size: 18px;
-	}
-		.header-nav a {
-			margin-left : 0.3rem;
-			text-decoration: none;
-			padding: 1rem;
-			color: inherit;
-			z-index: inherit;
-			margin-top: 5%;
-		}
-.home {
-	position: relative;
-	height: 100%;
-	background: var(--dark-color) url(img/clouds.jpg);
-	background-repeat: repeat;
-	background-position: center;
-	background-size: cover;
-}
-	.home::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: var(--dark-color);
-		opacity: 0.2;
-		z-index: 0;
-	}
-	.center {
-		margin: auto;
-		padding: 1.3rem 3.2rem;
-		background-color: transparent;
-		z-index: 2;
-    font-size: 72px;
-    font-weight: bold;
-	}
-
-@media all and (max-width: 600px) {
-	.header {
-		position: inherit;
-	}
-  .header, .header-nav {
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-		align-content: center;
-    padding: 0;
-    background-color: var(--dark-color);
-  }
-}
-* {
-    font-family: 微軟正黑體;
-  }
-  .header-name {
-    font-size: 22px;
-  }
-  </style>
 </head>
-<body>
-  </style>
-</head>
-<body>
 
-    <header class="container header"><a class="header-name"></a>
-    <nav class="header-nav container"><a href="zhtw.html"><h2>繁體中文</h2></a><a href="zhcn.html"><h2>简体中文</h2></a><a href="enus.html"><h2>English</h2></a></nav>
-	</header>
-    <section class="container home">
-      <div class="center">
-		<h4>介紹韓國 intro to Korea</h4>
-	  </div>
-    </section>
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                介紹韓國 Intro. to Korea
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="zhtw.html" target="_blank">繁體中文</a>
+            <a href="zhcn.html" target="_blank">简体中文</a>
+            <a href="enus.html" target="_blank">English</a>
+        </div>
+    </div>
+
+    <div class="body-text">
+        韓國歡迎您！Korea welcomes you!
+    </div>
+    <!-- partial -->
+    <script src="js/navscript.js"></script>
+
 </body>
+
 </html>
