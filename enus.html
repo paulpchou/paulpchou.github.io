@@ -32,6 +32,27 @@
 	position:relative;
 	font-family: 'Source Sans Pro', sans-serif;
 }
+.wedo-py-5-about {
+	background-image: url(https://www.hosotour.com/wp-content/uploads/2016/08/N_Seoul_Tower_-1024x768-1024x768.jpg);
+	background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+	position:relative;
+}
+.wedo-py-5-language {
+	background-image: url(https://ak0.picdn.net/shutterstock/videos/22332220/thumb/1.jpg);
+	background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+	position:relative;
+}
+.news-bottom-py-5 {
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f1/Korea-Seoul-Blue_House_%28Cheongwadae%29_Reception_Center_0688%269-07_cropped.jpg);
+	background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+	position:relative;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -1452,22 +1473,21 @@ p.subs1 {
     text-align: center;
     border-radius: 50%;
 }
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-#circle-shape-example { 
-  font-family: Open Sans, sans-serif; 
-  margin: 2rem; 
+.intro-text {
+	line-height: 1.6;
+	font-size: 14pt;
+    color: white !important;
+    font-weight: bold !important;
 }
-#circle-shape-example p { 
-  line-height: 1.8; 
+.img-circle {
+	width: 225px !important;
+	height: 225px !important;
 }
-#circle-shape-example .curve { 
-  width: 33%; height: auto;
-  min-width: 150px;
-  float: left;
-  margin-right:2rem; 
-  border-radius: 50%;
-  -webkit-shape-outside:circle();
-  shape-outside:circle();
+.box-item h6 {
+	line-height: 1.6;
+}
+.col-md-6 {
+    color: white !important;
 }
 	</style>
 </head>
@@ -1501,7 +1521,7 @@ p.subs1 {
 		</div>
 	</div>
 </div>
-<section class="wedo py-5" id="about">
+<section class=".wedo-py-5-about" id="about">
 	<div class="container py-lg-5">
 		<div class="w3l_head1">
 			<h4 class="heading text-center"><u>about</u></h4>
@@ -1661,7 +1681,7 @@ p.subs1 {
 	</section>
 <!-- //news -->
 <!-- news-bottom -->
-<section class="news-bottom py-5">
+<section class="news-bottom-py-5">
 	<div class="container py-lg-5">
 		<div class="newsgrid1 text-center">
 			<div class="w3l_head1">
@@ -1817,21 +1837,38 @@ p.subs1 {
 		</div>
 </section>
 
-<section class="wedo py-5" id="language">
+<section class="wedo-py-5-language" id="language">
 	<div class="container py-lg-5">
 		<div class="w3l_head1">
-			<h4 class="heading text-center"><u>Korean Introduction</u></h4>
+			<h4 class="heading text-center"><u>Korean intro.</u></h4>
 		</div>
-		<div id="circle-shape-example">
-			<img src="https://t3.ftcdn.net/jpg/02/30/75/92/500_F_230759252_fQyAdwhPbljHPKXTmwi9ZPm7aaMyHzHn.jpg" alt="Korean" class="curve"><h4 style="color:white"><center><u>the history of Korean</u></center></h4>
-		  
-			<p><h5 style="color:white">Korean is used in the Korean peninsula and the languages ​​used in the Northeast of China, the Far East of Russia, Japan, and other Korean ethnic groups or Korean ethnic communities. In China In 1897, before the establishment of the Korean Empire, the language was only called "Korean" or "Dongyu." After the founding of the People's Republic of China in 1949, the Democratic People's Republic of Korea, which belongs to the socialist camp, was the sole legal government of the entire Korean peninsula. Therefore, all the words about the Korean culture and country in China and the North Korean Peninsula are referred to as "North Korea." The language thus continues to be called "Korean."</h5>
-		  </div>
-		  <div id="circle-shape-example">
-			<img src="https://images-na.ssl-images-amazon.com/images/I/51XMJYDwRQL.jpg" alt="Korean" class="curve"><h4 style="color:white"><center><u>Korean alphabet</u></center></h4>
-		  
-			<p><h6 style="color:white">vowels:ㅏ【a】ㅑ【ya】ㅓ【eo】ㅕ【yeo】ㅗ【o】ㅛ【yo】ㅜ【u】ㅠ【yu】ㅡ【eu】ㅣ【i】 compound vowels: ㅐ【ae】ㅒ【yae】ㅔ【e】ㅖ【ye】ㅘ【wa】ㅙ【wae】ㅚ【oe】ㅝ【wo】ㅞ【we】ㅟ【wi】ㅢ【eui】 consonants: ㄱ【g】ㄴ【n】ㄷ【d】ㄹ【l】ㅁ【m】ㅂ【b】ㅅ【s】ㅇ【no pronounciation】ㅈ【j】ㅊ【ch】ㅋ【k】ㅌ【t】ㅍ【p】ㅎ【h】 double consonants: ㄲ【kk】ㄸ【tt】ㅃ【bb】ㅆ【ss】ㅉ【jj】</h6>
-		  </div>
+		<div class="container ">
+            <div class="row heading">
+			<hr class="line02">
+			<div class="intro-text">Korean is used in the Korean peninsula and the languages ​​used in the Northeast of China, the Far East of Russia, Japan, and other Korean ethnic groups or Korean ethnic communities. Just in China In 1897, before the establishment of the Korean Empire, the language was only called "Korean" or "Dongyu." After the founding of the People's Republic of China in 1949, the Democratic People's Republic of Korea, which belongs to the socialist camp, was the sole legal government of the entire Korean peninsula. Therefore, all the words about the Korean culture and country in China and the North Korean Peninsula are referred to as "North Korea." The language thus continues to be called "Korean." However, in 1992, after the establishment of diplomatic relations between China and the Republic of Korea, the direct cultural and economic exchanges with the Republic of Korea developed rapidly. The capital of the Republic of Korea flowed into China in large quantities. The textbooks and dictionaries of the language were issued in the name of "Korean" and the content was Korean. Mainly. Therefore, the terms "Korean" and "Korean" are now more common in China.</div>
+			<hr></hr>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="box-item">
+				<img src="https://i.pinimg.com/originals/fc/5d/1f/fc5d1ff4cb3ea3b7d7e172480eb05467.jpg" class="img-circle f-right">
+				<hr></hr>
+				<h6><b>Hangul is the official alphabet of Korean language used in South Korea and North Korea. The Korean alphabet consists of 19 consonants and 21 vowels, for a total of 40 major letters. There are also some outdated characters and combination characters, but the main letter is 40 letters. However, unlike English, letters are combined into blocks of usually 2 to 3 characters per syllable. The most interesting feature of the Korean alphabet is the design of the letters. The shape of each letter is designed according to the sound characteristics they represent. Consonants are based on the shape of the mouth when you pronounce, and vowels are made from horizontal or vertical lines that are easily identifiable. Each consonant has its own name. For example, ᄀ is called giyeok (기역). The vowels are named only by the sound they emit, such as “ah ㄚ”ᅡ. Korean writing is different from most writing systems. Although Korean is an alphabet (one of which mainly corresponds to a sound), the letters are not written linearly. Instead, they are grouped into syllable blocks.</b></h6>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="box-item">
+				<img src="https://linguisticschool.com/wp-content/uploads/2019/02/Korean-Vowels.png" class="img-circle f-left">
+				<hr></hr>
+				<h6><b>Since Korean is influenced by the West, what about it? Korean is usually written in the same way as English. It is written from left to right and from top to bottom, but it is also possible to write in the same way as Chinese, from top to bottom and right to left. Each letter in the alphabet is a simple shape that represents the sound (some characters change the sound depending on the position in the syllable or just the sound is harder). Each word in Korean begins with a vowel and has a vowel; however, depending on which vowel is used, the position of the vowel can be changed relative to the first consonant. Each vowel is suitable for groups of long axial up and down such as: "ᅡ, ᅢ, ᅣ, ᅤ, ᅥ, ᅦ, ᅧ, ᅨandᅵ", placed on the right side of the vowel, from left to right into the long axis Groups such as "ᅩ, ᅭ, ᅮ, ᅲ and ᅳ", placed below the vowel, or those vowels that have both the upper and lower major axes and the left and right long axes in the same vowel. These vowels are a combination of two vowels such as "ᅴ", which consists of "ᅳ", "ᅵ" or "ᅱ". "ᅮ" and "ᅵ".</b></h6>
+			</div>
+			</div>
+		</div>
+	</div>
+		</div>
+	</div>
+</div>
 		</section>
 	<div class="foot_bottom">
 		<div class="container">
